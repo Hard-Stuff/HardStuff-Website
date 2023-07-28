@@ -23,10 +23,10 @@
 body {
     font-family: "Sansation", sans-serif;
     background-color: rgb(31, 31, 38);
-    font-size: 32px;
+    font-size: xx-large;
     color: rgb(235, 233, 242);
-    margin: 0;
-    padding: 0;
+    padding: 2em;
+    margin: auto;
 }
 
 .hardstuff {
@@ -53,6 +53,13 @@ h1 {
     font-size: 10rem;
     margin-bottom: 1rem;
     color: rgb(255, 255, 255);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
 }
 
 h2 {
@@ -98,7 +105,6 @@ button {
     transition: background-color 0.3s ease;
     border-radius: 1em;
     color: rgb(39, 48, 41);
-    min-width: 400px;
     margin: 0.5em;
     font-family: inherit;
 }
