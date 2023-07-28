@@ -157,11 +157,9 @@ const App = () => {
                     <p>
                         Let's join forces and build a brighter future. Together, we can shape the world we want to live
                         in. Are you ready to make a real impact?
-                        <br />
-                        Join <span className="hardstuff">Hard Stuff</span> today!
                     </p>{" "}
-                    <button className="cta-button" onClick={handleLetsChatClick}>
-                        Let's Chat
+                    <button onClick={handleLetsChatClick} style={{ fontSize: "1em" }}>
+                        Let's chat about fixing the <span className="hardstuff">Hard Stuff</span>
                     </button>
                 </div>
             </section>
