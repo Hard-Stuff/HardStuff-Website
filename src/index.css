@@ -1,13 +1,159 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: "Sansation";
+    src: url("./assets/fonts/sansation/Sansation_Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Rubik Glitch";
+    src: url("./assets/fonts/Rubik_Glitch/RubikGlitch-Regular.ttf") format("truetype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: transparent;
+}
+
+/* Styling the scrollbar handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, rgb(20, 245, 174), rgb(165, 140, 254)); /* Dark-grey color */
+    border-radius: 10px; /* Rounded handle */
+}
+
+/* Add a little padding to avoid overlap with content */
+body {
+    font-family: "Sansation", sans-serif;
+    background-color: rgb(31, 31, 38);
+    font-size: 32px;
+    color: rgb(235, 233, 242);
+    margin: 0;
+    padding: 0;
+}
+
+.hardstuff {
+    font-weight: lighter;
+    font-family: "Rubik Glitch", sans-serif;
+    background: linear-gradient(135deg, rgb(20, 245, 174), rgb(165, 140, 254));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.section {
+    margin: 10em 0 10em 0;
+    opacity: 0;
+    animation-fill-mode: both; /* Make sure the element retains the state after the animation */
+}
+
+.section .content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 10rem;
+    margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.lock-header {
+    font-size: 1em;
+    padding: 20px;
+    position: fixed;
+    text-align: left;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background: linear-gradient(180deg, rgb(20, 20, 20), rgba(165, 140, 254, 0));
+}
+
+.header {
+    align-items: center;
+    padding: 0px;
+    margin: 15% 0 25% 0;
+}
+
+.footer {
+    font-size: small;
+    margin: 20px;
+}
+
+.footer a {
+    color: rgb(224, 242, 133);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+button {
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: rgb(235, 233, 242);
+    transition: background-color 0.3s ease;
+    border-radius: 1em;
+    color: rgb(39, 48, 41);
+    min-width: 400px;
+    margin: 0.5em;
+    font-family: inherit;
+}
+
+button:hover {
+    background-color: rgb(224, 242, 133);
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Intersection Observer Animation */
+
+.fade-in {
+    opacity: 1;
+    animation: fadeInUp 1s forwards;
+}
+
+/* Transition Effects */
+
+.fade-in {
+    opacity: 1;
+    animation: fadeInUp 1s forwards;
+}
+
+/* Transition Effects */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutDown {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 1s forwards;
+}
+
+.fade-out {
+    animation: fadeOutDown 1s forwards;
+}
+
+.pillar-content {
+    font-size: 0.75em;
+    animation: fadeInUp 1s forwards;
 }
