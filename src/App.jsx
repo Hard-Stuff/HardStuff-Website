@@ -42,7 +42,7 @@ const App = () => {
     return (
         <div className="App">
             <header className="lock-header">
-                <img src={process.env.PUBLIC_URL + "/logo.svg"} width="60px" />
+                <img src={process.env.PUBLIC_URL + "/logo.svg"} alt="Let's build the Hard Stuff!" width="60px" />
             </header>
             <header className="header">
                 <h1>
