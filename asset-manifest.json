@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/HardStuff/static/css/main.618cc30d.css",
-    "main.js": "/HardStuff/static/js/main.54ce025e.js",
-    "static/js/787.c52c0e69.chunk.js": "/HardStuff/static/js/787.c52c0e69.chunk.js",
-    "index.html": "/HardStuff/index.html",
-    "main.618cc30d.css.map": "/HardStuff/static/css/main.618cc30d.css.map",
-    "main.54ce025e.js.map": "/HardStuff/static/js/main.54ce025e.js.map",
-    "787.c52c0e69.chunk.js.map": "/HardStuff/static/js/787.c52c0e69.chunk.js.map"
+    "main.css": "/hard-stuff.com/static/css/main.618cc30d.css",
+    "main.js": "/hard-stuff.com/static/js/main.3dd7a700.js",
+    "static/js/787.c52c0e69.chunk.js": "/hard-stuff.com/static/js/787.c52c0e69.chunk.js",
+    "index.html": "/hard-stuff.com/index.html",
+    "main.618cc30d.css.map": "/hard-stuff.com/static/css/main.618cc30d.css.map",
+    "main.3dd7a700.js.map": "/hard-stuff.com/static/js/main.3dd7a700.js.map",
+    "787.c52c0e69.chunk.js.map": "/hard-stuff.com/static/js/787.c52c0e69.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.618cc30d.css",
-    "static/js/main.54ce025e.js"
+    "static/js/main.3dd7a700.js"
   ]
 }
