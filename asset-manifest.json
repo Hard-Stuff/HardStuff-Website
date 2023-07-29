@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/hard-stuff.com/static/css/main.618cc30d.css",
-    "main.js": "/hard-stuff.com/static/js/main.3dd7a700.js",
-    "static/js/787.c52c0e69.chunk.js": "/hard-stuff.com/static/js/787.c52c0e69.chunk.js",
-    "index.html": "/hard-stuff.com/index.html",
-    "main.618cc30d.css.map": "/hard-stuff.com/static/css/main.618cc30d.css.map",
-    "main.3dd7a700.js.map": "/hard-stuff.com/static/js/main.3dd7a700.js.map",
-    "787.c52c0e69.chunk.js.map": "/hard-stuff.com/static/js/787.c52c0e69.chunk.js.map"
+    "main.css": "/static/css/main.618cc30d.css",
+    "main.js": "/static/js/main.51befb6c.js",
+    "static/js/787.c52c0e69.chunk.js": "/static/js/787.c52c0e69.chunk.js",
+    "index.html": "/index.html",
+    "main.618cc30d.css.map": "/static/css/main.618cc30d.css.map",
+    "main.51befb6c.js.map": "/static/js/main.51befb6c.js.map",
+    "787.c52c0e69.chunk.js.map": "/static/js/787.c52c0e69.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.618cc30d.css",
-    "static/js/main.3dd7a700.js"
+    "static/js/main.51befb6c.js"
   ]
 }
