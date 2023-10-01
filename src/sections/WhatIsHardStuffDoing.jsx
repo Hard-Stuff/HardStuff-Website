@@ -9,55 +9,69 @@ import incubator_icon from "../assets/icons/incubator.png";
 
 export const WhatIsHardStuffDoing = () => {
     const [showContent, setShowContent] = useState({
-        ventureStudio: false,
-        venturePartners: false,
+        changeMakers: false,
+        technicalIncubator: false,
         hardStuffChampions: false,
     });
     return (
         <>
             <section className="section pillars-section">
                 <div className="content">
-                    <h2>Our Three Pillars</h2>
+                    <h2>
+                        What is <span className="hardstuff">Hard Stuff</span> doing about this?
+                    </h2>
                     <div className="pillar">
                         <IconnedButton
-                            onClick={() => setShowContent((prev) => ({ ...prev, ventureStudio: !prev.ventureStudio }))}
+                            onClick={() => setShowContent((prev) => ({ ...prev, changeMakers: !prev.changeMakers }))}
                             image_src={tools_icon}
-                            style={{ fontSize: "1em" }}
-                            content="Venture Studio"
+                            style={{
+                                fontSize: "1em",
+                                borderColor: showContent.changeMakers ? "#FF8A00" : "",
+                            }}
+                            content={
+                                <div>
+                                    <span className="hardstuffnocolor">Hard Stuff</span> ChangeMakers
+                                </div>
+                            }
                         />
                         {/* Conditionally render the content based on the state */}
-                        {showContent.ventureStudio && (
+                        {showContent.changeMakers && (
                             <div className="pillar-content">
                                 <p>
-                                    Our Venture Studio serves as a powerhouse of support for hardware startups, guiding
-                                    them from the initial idea stage to scalable solutions. We offer rapid development,
-                                    engineering expertise, and scaling support, enabling startups to create tangible,
-                                    high-impact hardware solutions efficiently.
+                                    Our powerhouse to support hardware startups, guiding you from your earliest idea to
+                                    Minimum Viable Product. We offer rapid development, engineering expertise, and
+                                    scaling support, enabling startups to create tangible, high-impact hardware
+                                    solutions efficiently.
                                 </p>
+                                <div>Idea → Field-testing ↔ “Cardboard Prototypes” ↔ Functional Prototypes ↔ MVP</div>
                             </div>
                         )}
                     </div>
                     <div className="pillar">
                         <IconnedButton
                             onClick={() =>
-                                setShowContent((prev) => ({ ...prev, venturePartners: !prev.venturePartners }))
+                                setShowContent((prev) => ({ ...prev, technicalIncubator: !prev.technicalIncubator }))
                             }
                             image_src={incubator_icon}
-                            style={{ fontSize: "1em" }}
-                            content="Venture Incubator"
+                            style={{ fontSize: "1em", borderColor: showContent.technicalIncubator ? "#FF8A00" : "" }}
+                            content={
+                                <div>
+                                    <span className="hardstuffnocolor">Hard Stuff</span> Technical Incubator
+                                </div>
+                            }
                             alignment="right"
                         />
                         {/* Conditionally render the content based on the state */}
-                        {showContent.venturePartners && (
+                        {showContent.technicalIncubator && (
                             <div className="pillar-content">
                                 <p>
-                                    Collaboration is essential to achieving our goals. We form strong alliances with
-                                    industry players, universities, and investors who share our passion for creating
-                                    hardware solutions that deliver "High Value to Society." Hard problems like these
-                                    require big and small players, all around the world. By partnering with diverse
-                                    stakeholders, we amplify our collective impact and accelerate progress towards a
-                                    sustainable future.
+                                    We work closely with Investors, Incubators, & Accelerators, and with their startups,
+                                    to support in-field testing to truly validate ideas. We build Minimum Viable
+                                    Products to unlock the next phase of impact and scale in early-stage hardware
+                                    startups. And we teach founders how to deliver true, immediate impact, and we test
+                                    prototypes alongside startups to validate impactful solutions.
                                 </p>
+                                <div>Field-testing ∙ Prototyping ∙ Impact & Build Workshops ∙ Advisory Services</div>
                             </div>
                         )}
                     </div>
@@ -67,19 +81,27 @@ export const WhatIsHardStuffDoing = () => {
                                 setShowContent((prev) => ({ ...prev, hardStuffChampions: !prev.hardStuffChampions }))
                             }
                             image_src={celebration_icon}
-                            style={{ fontSize: "1em" }}
-                            content="Hard Stuff Champions"
+                            style={{ fontSize: "1em", borderColor: showContent.hardStuffChampions ? "#FF8A00" : "" }}
+                            content={
+                                <div>
+                                    <span className="hardstuffnocolor">Hard Stuff</span> Champions
+                                </div>
+                            }
                         />
                         {/* Conditionally render the content based on the state */}
                         {showContent.hardStuffChampions && (
                             <div className="pillar-content">
                                 <p>
-                                    Beyond the Venture Studio and Venture Partnerships, we champion the hard stuff and
-                                    those doing the great work. We host events and showcase and support hardware
-                                    startups that are making a real difference. Our dedicated team of Hard Stuff
-                                    Champions works tirelessly to promote and elevate impactful hardware solutions,
-                                    celebrating the companies that are actively shaping a better world.
+                                    We make high-impact hardware companies great.
+                                    <br />
+                                    We celebrate the amazing progress we've already made together.
+                                    <br />
+                                    And we inspire the next generation of entrepreneurs to build a World they're excited
+                                    by!
                                 </p>
+                                <div>
+                                    Impact awareness ∙ Events ∙ A huge community of change-makers ∙ More coming soon!
+                                </div>
                             </div>
                         )}
                     </div>

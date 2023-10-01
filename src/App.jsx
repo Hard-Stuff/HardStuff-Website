@@ -33,10 +33,23 @@ const App = () => {
         });
     }, []);
 
+    const handleLetsChatClick = () => {
+        const subject = "I've just seen your website, and...";
+        const emailLink = `mailto:matt@hard-stuff.com?subject=${encodeURIComponent(subject)}`;
+        window.open(emailLink, "_blank");
+    };
     return (
         <div className="App">
             <header className="lock-header">
                 <img src={process.env.PUBLIC_URL + "/logo.svg"} alt="Let's build the Hard Stuff!" width="60px" />
+
+                <button
+                    className="hollowed"
+                    onClick={handleLetsChatClick}
+                    style={{ position: "absolute", top: "5px", right: "50px", padding: ".5em", border: "none" }}
+                >
+                    <span className="hardstuffnocolor">Email Us</span>
+                </button>
             </header>
             <header className="header">
                 <h1>
@@ -45,10 +58,11 @@ const App = () => {
                 <p> Accelerating Hardware Solutions for a Sustainable Future</p>
             </header>
             <TopSection />
-            <MissionAndVision />
             <OurApproach />
+            <MissionAndVision />
             <WhatIsHardStuffDoing />
             <ContactUs />
+            <footer className="lock-footer" />
             <footer className="footer">
                 <div className="content">
                     <div className="footer-links">

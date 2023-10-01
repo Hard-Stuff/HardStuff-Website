@@ -11,6 +11,7 @@ import { React, useState, useEffect, forwardRef } from "react";
  * @param className The title to describe what this button does
  * @param alternateClassName The title to describe what this button does
  */
+
 export const IconnedButton = (props) => {
     const { image_src, content, alignment, onClick, style } = props;
     const [bodyBackground, setBodyBackground] = useState();
@@ -33,7 +34,8 @@ export const IconnedButton = (props) => {
             style={{
                 display: "flex",
                 alignItems: "center",
-                borderRadius: alignment !== "right" ? "0 20px 20px 0" : "20px 0 0 20px",
+                borderRadius: alignment !== "right" ? "0 30px 30px 0" : "30px 0 0 30px",
+                ...style
             }}
         >
             {alignment !== "right" && <img src={image_src} style={imgStyle} />}
