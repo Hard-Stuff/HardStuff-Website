@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { IconnedButton } from "./components/Buttons";
 import "./App.css";
+
+// import local icons
+import tools_icon from "./assets/icons/tools.png";
+import celebration_icon from "./assets/icons/celebration.png";
+import incubator_icon from "./assets/icons/incubator.png";
 
 const App = () => {
     const [showContent, setShowContent] = useState({
@@ -88,12 +94,12 @@ const App = () => {
                 <div className="content">
                     <h2>Our Three Pillars</h2>
                     <div className="pillar">
-                        <button
+                        <IconnedButton
                             onClick={() => setShowContent((prev) => ({ ...prev, ventureStudio: !prev.ventureStudio }))}
+                            image_src={tools_icon}
                             style={{ fontSize: "1em" }}
-                        >
-                            Venture Studio
-                        </button>
+                            content="Venture Studio"
+                        />
                         {/* Conditionally render the content based on the state */}
                         {showContent.ventureStudio && (
                             <div className="pillar-content">
@@ -107,14 +113,15 @@ const App = () => {
                         )}
                     </div>
                     <div className="pillar">
-                        <button
+                        <IconnedButton
                             onClick={() =>
                                 setShowContent((prev) => ({ ...prev, venturePartners: !prev.venturePartners }))
                             }
+                            image_src={incubator_icon}
                             style={{ fontSize: "1em" }}
-                        >
-                            Venture Partners
-                        </button>
+                            content="Venture Incubator"
+                            alignment="right"
+                        />
                         {/* Conditionally render the content based on the state */}
                         {showContent.venturePartners && (
                             <div className="pillar-content">
@@ -130,14 +137,14 @@ const App = () => {
                         )}
                     </div>
                     <div className="pillar">
-                        <button
+                        <IconnedButton
                             onClick={() =>
                                 setShowContent((prev) => ({ ...prev, hardStuffChampions: !prev.hardStuffChampions }))
                             }
+                            image_src={celebration_icon}
                             style={{ fontSize: "1em" }}
-                        >
-                            Hard Stuff Champions
-                        </button>
+                            content="Hards Stuff Champions"
+                        />
                         {/* Conditionally render the content based on the state */}
                         {showContent.hardStuffChampions && (
                             <div className="pillar-content">
