@@ -72,13 +72,6 @@ h1 {
     color: rgb(255, 255, 255);
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 5rem;
-    }
-}
-
 h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -100,6 +93,7 @@ h3 {
     top: 0px;
     width: 100%;
     background: linear-gradient(180deg, rgb(20, 20, 20), rgba(165, 140, 254, 0));
+    z-index: 99;
 }
 
 .header {
@@ -168,9 +162,31 @@ button:hover {
     margin-left: 15%;
 }
 
+.iconned_button_img {
+    height: 32px;
+    flex-shrink: 0; /* prevents the image from shrinking*/
+    padding: 10px;
+}
+
 .iconned_button:hover {
     background-color: rgb(224, 242, 133);
     border-color: rgb(224, 242, 133);
+}
+
+.flex_box {
+    display: flex;
+    align-items: flex-start;
+    max-height: 500px;
+    height: 500px;
+    margin-bottom: 0px;
+}
+
+.flex_box_content {
+    margin: 5px;
+    padding: 5px;
+    transition: flex 0.5s;
+    overflow: hidden;
+    height: 100%;
 }
 
 .footer p {
@@ -220,8 +236,38 @@ button:hover {
 }
 
 .pillar-content {
-    font-size: 0.75em;
+    font-size: 1em;
     animation: fadeInUp 1s forwards;
     padding-top: 1em;
     padding-bottom: 2em;
+}
+
+@media (max-width: 768px) {
+    /* Mobile styles here */
+
+    h1 {
+        font-size: 5rem;
+    }
+    .iconned_button {
+        margin: 20px 0px 20px 0;
+        position: relative;
+        width: 120%; /* Just an example */
+        left: -10%;
+    }
+    .iconned_button_img {
+        height: 18px;
+        flex-shrink: 0; /* prevents the image from shrinking*/
+        padding: 6px;
+    }
+
+    .ignore_if_mobile {
+        display: none;
+    }
+
+    .flex_box {
+        flex-direction: column;
+        overflow: none;
+        max-height: initial;
+        height: 900px;
+    }
 }

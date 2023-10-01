@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { EmailUsButton } from "../components/Buttons";
 
-export const ContactUs = () => {
+export const ContactUs = (props) => {
     const [selected, setSelected] = useState(null);
+    const { isMobile } = props;
 
     const elements = [
         {
@@ -10,6 +12,7 @@ export const ContactUs = () => {
                 <div className="pillar-content">
                     We work with high-impact hardware startups and young companies like yours to validate your impact
                     propositions, through in-field testing and bootstrapped prototyping.
+                    <br />
                     <br />
                     <button
                         className="hollowed"
@@ -31,6 +34,7 @@ export const ContactUs = () => {
                     We want to work with you and your hardware startups to validate their value propositions through
                     in-field testing, bootstrapped prototyping, and impact workshops.
                     <br />
+                    <br />
                     <button
                         className="hollowed"
                         style={{
@@ -51,6 +55,7 @@ export const ContactUs = () => {
                     We’re building a high-impact-only technical incubator, applying our signature impact proposition
                     approach with game changing hardware-centric funding.
                     <br />
+                    <br />
                     <button
                         className="hollowed"
                         style={{
@@ -69,23 +74,62 @@ export const ContactUs = () => {
     return (
         <section className="section">
             <div className="content">
-                <h3>The Time to Act is Now! I am a...</h3>
-                <div style={{ display: "inline" }}>
-                    {elements.map((elem, idx) => (
-                        <button
-                            className="hollowed"
-                            key={idx}
-                            onClick={() => setSelected(idx !== selected ? idx : null)}
-                            style={{
-                                backgroundColor: idx === selected ? "#FF8A00" : "",
-                                color: idx === selected ? "white" : "",
-                            }}
-                        >
-                            {elem.title}
-                        </button>
-                    ))}
-                </div>
-                <div className="content">{elements[selected]?.content}</div>
+                <h3>
+                    The Time to Act is Now!
+                    <br />I am a...
+                </h3>
+                {isMobile ? (
+                    <>
+                        <div className="flex_box" style={{ height: selected === null ? "300px" : "700px" }}>
+                            {elements.map((elem, idx) => (
+                                <div
+                                    key={idx}
+                                    className="flex_box_content"
+                                    style={{
+                                        flex: selected === idx ? 8 : 1,
+                                        borderTop: isMobile && idx !== 0 ? "3px solid #fff4" : "",
+                                        borderLeft:
+                                            !isMobile && idx === selected && selected !== 0 ? "3px solid #fff4" : "",
+                                        borderRight:
+                                            !isMobile && idx === selected && selected !== elements.length - 1
+                                                ? "3px solid #fff4"
+                                                : "",
+                                    }}
+                                    onMouseEnter={() => setSelected(idx)}
+                                    onMouseLeave={() => setSelected(null)}
+                                >
+                                    <h3>{elem.title}</h3>
+                                    <div style={{ color: idx === selected ? "" : "#fff0", fontSize: ".75em" }}>
+                                        {elem.content}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </>
+                ) : (
+                    <>
+                        <div style={{ display: "inline" }}>
+                            {elements.map((elem, idx) => (
+                                <button
+                                    className="hollowed"
+                                    key={idx}
+                                    onClick={() => setSelected(idx !== selected ? idx : null)}
+                                    style={{
+                                        backgroundColor: idx === selected ? "#FF8A00" : "",
+                                        color: idx === selected ? "white" : "",
+                                    }}
+                                >
+                                    {elem.title}
+                                </button>
+                            ))}
+                        </div>
+                        <div className="content">{elements[selected]?.content}</div>{" "}
+                    </>
+                )}
+                <span style={{ display: "inline", fontSize: ".75em" }}>
+                    or you could always
+                    <EmailUsButton style={{ padding: "0px" }} />
+                </span>
             </div>
         </section>
     );
