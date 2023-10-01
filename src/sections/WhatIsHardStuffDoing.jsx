@@ -7,12 +7,14 @@ import tools_icon from "../assets/icons/tools.png";
 import celebration_icon from "../assets/icons/celebration.png";
 import incubator_icon from "../assets/icons/incubator.png";
 
-export const WhatIsHardStuffDoing = () => {
+export const WhatIsHardStuffDoing = (props) => {
     const [showContent, setShowContent] = useState({
         changeMakers: false,
         technicalIncubator: false,
         hardStuffChampions: false,
     });
+    const { isMobile } = props;
+
     return (
         <>
             <section className="section pillars-section">
@@ -30,7 +32,7 @@ export const WhatIsHardStuffDoing = () => {
                             }}
                             content={
                                 <div>
-                                    <span className="hardstuffnocolor">Hard Stuff</span> ChangeMakers
+                                    <span className="hardstuffnocolor ignore_if_mobile">Hard Stuff</span> ChangeMakers
                                 </div>
                             }
                         />
@@ -39,11 +41,30 @@ export const WhatIsHardStuffDoing = () => {
                             <div className="pillar-content">
                                 <p>
                                     Our powerhouse to support hardware startups, guiding you from your earliest idea to
-                                    Minimum Viable Product. We offer rapid development, engineering expertise, and
-                                    scaling support, enabling startups to create tangible, high-impact hardware
-                                    solutions efficiently.
+                                    Minimum Viable Product. We offer in-field testing support, rapid development,
+                                    engineering expertise, and scaling support, enabling startups to create tangible,
+                                    high-impact hardware solutions efficiently.
                                 </p>
-                                <div>Idea → Field-testing ↔ “Cardboard Prototypes” ↔ Functional Prototypes ↔ MVP</div>
+                                {isMobile ? (
+                                    <div>
+                                        Idea
+                                        <br />↓<br />
+                                        In-field testing
+                                        <br />↕<br />
+                                        “Cardboard Prototypes”
+                                        <br />↕<br />
+                                        Functional Prototypes
+                                        <br />↕<br />
+                                        MVP
+                                        <br />↓<br />
+                                        Life-long support to deliver impact
+                                    </div>
+                                ) : (
+                                    <div style={{ fontSize: ".75em" }}>
+                                        Idea → Field-testing ↔ “Cardboard Prototypes” ↔ Functional Prototypes ↔ MVP →
+                                        Life-long support to deliver impact
+                                    </div>
+                                )}
                             </div>
                         )}
                     </div>
@@ -56,7 +77,8 @@ export const WhatIsHardStuffDoing = () => {
                             style={{ fontSize: "1em", borderColor: showContent.technicalIncubator ? "#FF8A00" : "" }}
                             content={
                                 <div>
-                                    <span className="hardstuffnocolor">Hard Stuff</span> Technical Incubator
+                                    <span className="hardstuffnocolor ignore_if_mobile">Hard Stuff</span> Technical
+                                    Incubator
                                 </div>
                             }
                             alignment="right"
@@ -66,12 +88,31 @@ export const WhatIsHardStuffDoing = () => {
                             <div className="pillar-content">
                                 <p>
                                     We work closely with Investors, Incubators, & Accelerators, and with their startups,
-                                    to support in-field testing to truly validate ideas. We build Minimum Viable
-                                    Products to unlock the next phase of impact and scale in early-stage hardware
-                                    startups. And we teach founders how to deliver true, immediate impact, and we test
-                                    prototypes alongside startups to validate impactful solutions.
+                                    to support in-field testing to truly validate ideas.
+                                    <br />
+                                    <br />
+                                    We build Minimum Viable Products to unlock the next phase of impact and scale in
+                                    early-stage hardware startups.
+                                    <br />
+                                    <br />
+                                    And we teach founders how to deliver true, immediate impact, and we test prototypes
+                                    alongside startups to validate impactful solutions.
                                 </p>
-                                <div>Field-testing ∙ Prototyping ∙ Impact & Build Workshops ∙ Advisory Services</div>
+                                {isMobile ? (
+                                    <div>
+                                        Field-testing
+                                        <br />∙<br />
+                                        Prototyping
+                                        <br />∙<br />
+                                        Impact & Build Workshops
+                                        <br />∙<br />
+                                        Advisory Services
+                                    </div>
+                                ) : (
+                                    <div style={{ fontSize: ".75em" }}>
+                                        Field-testing ∙ Prototyping ∙ Impact & Build Workshops ∙ Advisory Services
+                                    </div>
+                                )}
                             </div>
                         )}
                     </div>
@@ -84,7 +125,7 @@ export const WhatIsHardStuffDoing = () => {
                             style={{ fontSize: "1em", borderColor: showContent.hardStuffChampions ? "#FF8A00" : "" }}
                             content={
                                 <div>
-                                    <span className="hardstuffnocolor">Hard Stuff</span> Champions
+                                    <span className="hardstuffnocolor ignore_if_mobile">Hard Stuff</span> Champions
                                 </div>
                             }
                         />
@@ -99,9 +140,21 @@ export const WhatIsHardStuffDoing = () => {
                                     And we inspire the next generation of entrepreneurs to build a World they're excited
                                     by!
                                 </p>
-                                <div>
-                                    Impact awareness ∙ Events ∙ A huge community of change-makers ∙ More coming soon!
-                                </div>
+                                {isMobile ? (
+                                    <div>
+                                        Impact awareness
+                                        <br />∙<br />
+                                        Events
+                                        <br />∙<br />A huge community of change-makers
+                                        <br />∙<br />
+                                        <em>More coming soon!</em>
+                                    </div>
+                                ) : (
+                                    <div style={{ fontSize: ".75em" }}>
+                                        Impact awareness ∙ Events ∙ A huge community of change-makers ∙{" "}
+                                        <em>More coming soon!</em>
+                                    </div>
+                                )}
                             </div>
                         )}
                     </div>

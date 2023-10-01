@@ -6,6 +6,7 @@ import { MissionAndVision } from "./sections/MissionAndVision";
 import { OurApproach } from "./sections/OurApproach";
 import { WhatIsHardStuffDoing } from "./sections/WhatIsHardStuffDoing";
 import { ContactUs } from "./sections/ContactUs";
+import { EmailUsButton } from "./components/Buttons";
 
 const App = () => {
     useEffect(() => {
@@ -33,23 +34,25 @@ const App = () => {
         });
     }, []);
 
-    const handleLetsChatClick = () => {
-        const subject = "I've just seen your website, and...";
-        const emailLink = `mailto:matt@hard-stuff.com?subject=${encodeURIComponent(subject)}`;
-        window.open(emailLink, "_blank");
-    };
+    const [width, setWidth] = useState(window.innerWidth);
+
+    function handleWindowSizeChange() {
+        setWidth(window.innerWidth);
+    }
+    useEffect(() => {
+        window.addEventListener("resize", handleWindowSizeChange);
+        return () => {
+            window.removeEventListener("resize", handleWindowSizeChange);
+        };
+    }, []);
+
+    const isMobile = width <= 768;
+
     return (
         <div className="App">
             <header className="lock-header">
                 <img src={process.env.PUBLIC_URL + "/logo.svg"} alt="Let's build the Hard Stuff!" width="60px" />
-
-                <button
-                    className="hollowed"
-                    onClick={handleLetsChatClick}
-                    style={{ position: "absolute", top: "5px", right: "50px", padding: ".5em", border: "none" }}
-                >
-                    <span className="hardstuffnocolor">Email Us</span>
-                </button>
+                {!isMobile && <EmailUsButton style={{ position: "absolute", top: "5px", right: "50px" }} />}
             </header>
             <header className="header">
                 <h1>
@@ -57,11 +60,11 @@ const App = () => {
                 </h1>
                 <p> Accelerating Hardware Solutions for a Sustainable Future</p>
             </header>
-            <TopSection />
-            <OurApproach />
-            <MissionAndVision />
-            <WhatIsHardStuffDoing />
-            <ContactUs />
+            <TopSection isMobile={isMobile} />
+            <OurApproach isMobile={isMobile} />
+            <MissionAndVision isMobile={isMobile} />
+            <WhatIsHardStuffDoing isMobile={isMobile} />
+            <ContactUs isMobile={isMobile} />
             <footer className="lock-footer" />
             <footer className="footer">
                 <div className="content">

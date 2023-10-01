@@ -1,4 +1,4 @@
-import { React, useState, useEffect, forwardRef } from "react";
+import { React, useState, useEffect } from "react";
 
 /**
  *
@@ -21,9 +21,6 @@ export const IconnedButton = (props) => {
     }, []);
 
     const imgStyle = {
-        height: "32px",
-        flexShrink: 0, // prevents the image from shrinking
-        padding: "10px",
         backgroundColor: bodyBackground,
     };
 
@@ -35,10 +32,10 @@ export const IconnedButton = (props) => {
                 display: "flex",
                 alignItems: "center",
                 borderRadius: alignment !== "right" ? "0 30px 30px 0" : "30px 0 0 30px",
-                ...style
+                ...style,
             }}
         >
-            {alignment !== "right" && <img src={image_src} style={imgStyle} />}
+            {alignment !== "right" && <img src={image_src} className="iconned_button_img" alt="" style={imgStyle} />}
             <span
                 style={{
                     flexGrow: 1, // allows the text container to grow and fill the remaining space
@@ -50,7 +47,24 @@ export const IconnedButton = (props) => {
             >
                 {content}
             </span>
-            {alignment === "right" && <img src={image_src} style={imgStyle} />}
+            {alignment === "right" && <img src={image_src} className="iconned_button_img" alt="" style={imgStyle} />}
         </div>
+    );
+};
+
+export const EmailUsButton = (props) => {
+    const handleLetsChatClick = () => {
+        const subject = "I've just seen your website, and...";
+        const emailLink = `mailto:matt@hard-stuff.com?subject=${encodeURIComponent(subject)}`;
+        window.open(emailLink, "_blank");
+    };
+    return (
+        <button
+            className="hollowed"
+            onClick={handleLetsChatClick}
+            style={{ padding: ".5em", border: "none", ...props.style }}
+        >
+            <span className="hardstuffnocolor">Email Us</span>
+        </button>
     );
 };

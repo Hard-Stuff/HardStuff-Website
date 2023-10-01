@@ -5,21 +5,36 @@ import cardboard_prototype from "../assets/images/cardboard_prototype.png";
 import in_field_testing from "../assets/images/in_field_testing.png";
 import printed_prototype from "../assets/images/printed_prototype.png";
 
-export const OurApproach = () => {
-    const [selected, setSelected] = useState(null);
+export const OurApproach = (props) => {
+    const [selected, setSelected] = useState(0);
+    const { isMobile } = props;
 
     const elements = [
         {
             title: "In-field Testing",
             img: in_field_testing,
-            content:
-                "The majority of the problems that humanity faces are outside, not at an office desk, so at Hard Stuff we love getting our hands dirty. We run in-field testing alongside startups, understanding the problems at the source and where the impact needs to be made.",
+            content: (
+                <span>
+                    The majority of the problems that humanity faces are outside, not at an office desk, so at Hard
+                    Stuff we love getting our hands dirty.
+                    <br />
+                    <br />
+                    We run in-field testing alongside startups, understanding the problems at the source and where the
+                    impact needs to be made.
+                </span>
+            ),
         },
         {
             title: "Hyper-Rapid Prototyping",
             img: cardboard_prototype,
-            content:
-                "Early prototypes need to be simple, quick to change, and impactful (even if they fall apart!). At Hard Stuff, we're passionate about “cardboard prototyping” to rapidly turn theory into reality.",
+            content: (
+                <span>
+                    Early prototypes need to be simple, modifiable, and impactful <em>(even if they fall apart!)</em>.
+                    <br />
+                    <br />
+                    At Hard Stuff, we're passionate about “cardboard prototyping” to rapidly turn theory into reality.
+                </span>
+            ),
         },
         {
             title: "Minimum Viable Product",
@@ -31,23 +46,23 @@ export const OurApproach = () => {
 
     return (
         <>
-            <section className="section" style={{ maxHeight: "500px", marginBottom: "0px" }}>
+            <section className="section">
                 <div className="content">
                     <h2>Our approach</h2>
-                    <div style={{ display: "flex", height: "500px", alignItems: "flex-start" }}>
+                    <div className="flex_box">
                         {elements.map((elem, idx) => (
                             <div
                                 key={idx}
+                                className="flex_box_content"
                                 style={{
-                                    flex: selected === idx ? 10 : 1,
-                                    margin: "5px",
-                                    padding: "5px",
-                                    transition: "flex 0.5s",
-                                    overflow: "hidden",
-                                    borderLeft: idx === selected && selected != 0 ? "3px solid #fff4" : "",
+                                    flex: selected === idx ? 8 : 1,
+                                    borderTop: isMobile && idx !== 0 ? "3px solid #fff4" : "",
+                                    borderLeft:
+                                        !isMobile && idx === selected && selected !== 0 ? "3px solid #fff4" : "",
                                     borderRight:
-                                        idx === selected && selected != elements.length - 1 ? "3px solid #fff4" : "",
-                                    height: "100%",
+                                        !isMobile && idx === selected && selected !== elements.length - 1
+                                            ? "3px solid #fff4"
+                                            : "",
                                 }}
                                 onMouseEnter={() => setSelected(idx)}
                                 onMouseLeave={() => setSelected(null)}
@@ -55,8 +70,8 @@ export const OurApproach = () => {
                                 <h3>{elem.title}</h3>
                                 <img
                                     src={elem.img}
-                                    alt=""
-                                    height="300px"
+                                    alt={elem.title}
+                                    height="200px"
                                     style={
                                         {
                                             // padding: "10%",
