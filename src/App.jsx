@@ -77,9 +77,10 @@ const App = () => {
                 <div className="content">
                     <h2>Vision Statement</h2>
                     <p>
-                        We envision a world where impactful hardware solutions thrive, transforming industries, and
-                        addressing critical global challenges. With passion, collaboration, and innovation, we'll create
-                        a positive impact on society and the environment.
+                        We envision a world with a stable and safe climate, without plastic in our oceans, with nature
+                        thriving, without hunger, and where everyone everywhere is safe. We know how far away from that
+                        world we are today, and how all this stuff, this really really hard stuff, requires hard work
+                        and hardware game-changers.
                     </p>
                 </div>
             </section>
@@ -99,8 +100,8 @@ const App = () => {
                                 <p>
                                     Our Venture Studio serves as a powerhouse of support for hardware startups, guiding
                                     them from the initial idea stage to scalable solutions. We offer rapid development,
-                                    engineering expertise, scaling support, and more, enabling startups to create
-                                    tangible, high-impact hardware solutions efficiently.
+                                    engineering expertise, and scaling support, enabling startups to create tangible,
+                                    high-impact hardware solutions efficiently.
                                 </p>
                             </div>
                         )}
@@ -120,7 +121,8 @@ const App = () => {
                                 <p>
                                     Collaboration is essential to achieving our goals. We form strong alliances with
                                     industry players, universities, and investors who share our passion for creating
-                                    hardware solutions that deliver "High Value to Society." By partnering with diverse
+                                    hardware solutions that deliver "High Value to Society." Hard problems like these
+                                    require big and small players, all around the world. By partnering with diverse
                                     stakeholders, we amplify our collective impact and accelerate progress towards a
                                     sustainable future.
                                 </p>
@@ -140,11 +142,11 @@ const App = () => {
                         {showContent.hardStuffChampions && (
                             <div className="pillar-content">
                                 <p>
-                                    Beyond the Venture Studio and Venture Partnerships, we champion the hard stuff. We
-                                    host events, provide co-working spaces, and showcase and support hardware startups
-                                    that are making a real difference. Our dedicated team of Hard Stuff Champions works
-                                    tirelessly to promote and elevate impactful hardware solutions, celebrating the
-                                    companies that are actively shaping a better world.
+                                    Beyond the Venture Studio and Venture Partnerships, we champion the hard stuff and
+                                    those doing the great work. We host events and showcase and support hardware
+                                    startups that are making a real difference. Our dedicated team of Hard Stuff
+                                    Champions works tirelessly to promote and elevate impactful hardware solutions,
+                                    celebrating the companies that are actively shaping a better world.
                                 </p>
                             </div>
                         )}
