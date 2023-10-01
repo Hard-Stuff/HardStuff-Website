@@ -69,6 +69,12 @@ h2 {
     color: rgb(255, 255, 255);
 }
 
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+}
+
 .lock-header {
     font-size: 1em;
     padding: 20px;
