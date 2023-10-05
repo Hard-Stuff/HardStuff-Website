@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a92f108e.css",
-    "main.js": "/static/js/main.17585f8b.js",
+    "main.css": "/static/css/main.19ee5867.css",
+    "main.js": "/static/js/main.ab751caf.js",
     "static/js/787.c52c0e69.chunk.js": "/static/js/787.c52c0e69.chunk.js",
     "static/media/RubikGlitch-Regular.ttf": "/static/media/RubikGlitch-Regular.c45582ca18588f33422e.ttf",
     "static/media/in_field_testing.png": "/static/media/in_field_testing.c99af56cb1df3e9a5b4d.png",
@@ -9,12 +9,12 @@
     "static/media/printed_prototype.png": "/static/media/printed_prototype.cf5da1815775ceff7bdc.png",
     "static/media/Sansation_Light.ttf": "/static/media/Sansation_Light.4b0e0e7199c58c7cc1d3.ttf",
     "index.html": "/index.html",
-    "main.a92f108e.css.map": "/static/css/main.a92f108e.css.map",
-    "main.17585f8b.js.map": "/static/js/main.17585f8b.js.map",
+    "main.19ee5867.css.map": "/static/css/main.19ee5867.css.map",
+    "main.ab751caf.js.map": "/static/js/main.ab751caf.js.map",
     "787.c52c0e69.chunk.js.map": "/static/js/787.c52c0e69.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a92f108e.css",
-    "static/js/main.17585f8b.js"
+    "static/css/main.19ee5867.css",
+    "static/js/main.ab751caf.js"
   ]
 }
