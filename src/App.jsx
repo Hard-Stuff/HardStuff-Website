@@ -1,14 +1,26 @@
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    useLocation
+} from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import "./App.css";
 
-import { TopSection } from "./sections/TopSection";
-import { MissionAndVision } from "./sections/MissionAndVision";
-import { OurApproach } from "./sections/OurApproach";
-import { WhatIsHardStuffDoing } from "./sections/WhatIsHardStuffDoing";
-import { ContactUs } from "./sections/ContactUs";
-import { EmailUsButton } from "./components/Buttons";
+import NavBar from "./components/NavBar";
+import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
+import HowWeWork from "./pages/HowWeWork";
+import Footer from "./components/Footer";
 
-const App = () => {
+
+const pages = [
+    { endpoint: "/", title: "Home", component: <Home /> },
+    { endpoint: "/about-us", title: "About Us", component: <AboutUs /> },
+]
+
+const LoadPageContent = () => {
+    const location = useLocation(); // Using useLocation hook
     useEffect(() => {
         const sections = document.querySelectorAll(".section");
 
@@ -32,7 +44,11 @@ const App = () => {
         sections.forEach((section) => {
             fadeInObserver.observe(section);
         });
-    }, []);
+    }, [location]);
+}
+
+function App() {
+
 
     const [width, setWidth] = useState(window.innerWidth);
 
@@ -47,39 +63,18 @@ const App = () => {
     }, []);
 
     const isMobile = width <= 768;
-
     return (
-        <div className="App">
-            <header className="lock-header">
-                <img src={process.env.PUBLIC_URL + "/logo.svg"} alt="Let's build the Hard Stuff!" width="60px" />
-                {!isMobile && <EmailUsButton style={{ position: "absolute", top: "5px", right: "50px" }} />}
-            </header>
-            <header className="header">
-                <h1>
-                    <span className="hardstuff">Hard Stuff </span>
-                </h1>
-                <p> Accelerating Hardware Solutions for a Sustainable Future</p>
-            </header>
-            <TopSection isMobile={isMobile} />
-            <OurApproach isMobile={isMobile} />
-            <MissionAndVision isMobile={isMobile} />
-            <WhatIsHardStuffDoing isMobile={isMobile} />
-            <ContactUs isMobile={isMobile} />
-            <footer className="lock-footer" />
-            <footer className="footer">
-                <div className="content">
-                    <div className="footer-links">
-                        {/* <a href="#careers">Careers</a> */}
-                        {/* <a href="#contact">Contact</a> */}
-                    </div>
-                    <p>
-                        &copy; {new Date().getFullYear()} <span className="hardstuff">Hard Stuff</span>. All rights
-                        reserved.
-                    </p>
-                </div>
-            </footer>
-        </div>
+        <Router>
+            <NavBar pages={pages} />
+            <LoadPageContent />
+            <Routes>
+                {pages.map((each) => (
+                    <Route path={each.endpoint} element={each.component} isMobile={isMobile} />
+                ))}
+            </Routes>
+            <Footer />
+        </Router>
     );
-};
+}
 
 export default App;

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
+import "../App.css";
 
-export const MissionAndVision = () => {
+const AboutUs = () => {
     return (
         <>
             <section className="section">
@@ -30,3 +31,5 @@ export const MissionAndVision = () => {
         </>
     );
 };
+
+export default AboutUs;

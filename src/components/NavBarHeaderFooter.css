@@ -1,0 +1,40 @@
+.lock-header {
+    font-size: 1em;
+    padding: 20px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background: linear-gradient(180deg, rgb(20, 20, 20), rgba(165, 140, 254, 0));
+    z-index: 99;
+    display: flex;
+}
+
+.header {
+    align-items: center;
+    padding: 0px;
+    margin: 15% 0 25% 0;
+}
+
+.lock-footer {
+    font-size: 1em;
+    padding: 20px;
+    position: fixed;
+    text-align: left;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 1em;
+    background: linear-gradient(0, rgb(20, 20, 20), rgba(165, 140, 254, 0));
+}
+
+.footer {
+    font-size: small;
+    margin: 20px;
+}
+
+.footer a {
+    color: rgb(224, 242, 133);
+    text-decoration: none;
+    margin-right: 1rem;
+}

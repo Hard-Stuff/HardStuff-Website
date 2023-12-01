@@ -1,0 +1,23 @@
+.flex_box {
+    display: flex;
+    align-items: flex-start;
+    height: 50vh;
+    margin-bottom: 0px;
+}
+
+.flex_box_content {
+    margin: 5px;
+    padding: 5px;
+    transition: flex 0.5s;
+    overflow: hidden;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .flex_box {
+        flex-direction: column;
+        overflow: none;
+        max-height: initial;
+        height: 900px;
+    }
+}

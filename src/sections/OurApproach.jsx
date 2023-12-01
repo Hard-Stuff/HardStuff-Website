@@ -11,7 +11,20 @@ export const OurApproach = (props) => {
 
     const elements = [
         {
-            title: "In-field Testing",
+            title: "Minimum",
+            img: cardboard_prototype,
+            content: (
+                <span>
+                    Early prototypes need to be simple, modifiable, and impactful<br /><em>(even if they fall apart!)</em>.
+                    <br />
+                    <br />
+                    At Hard Stuff, we build the prototypes you need to demonstrate viablity, engage with customers, and unlock investment.<br />
+                    Prototypes range from “cardboard prototyping” up to full-scale solutions: whatever is the minimal way to unlock your next stage!
+                </span>
+            ),
+        },
+        {
+            title: "Viable",
             img: in_field_testing,
             content: (
                 <span>
@@ -25,19 +38,7 @@ export const OurApproach = (props) => {
             ),
         },
         {
-            title: "Hyper-Rapid Prototyping",
-            img: cardboard_prototype,
-            content: (
-                <span>
-                    Early prototypes need to be simple, modifiable, and impactful <em>(even if they fall apart!)</em>.
-                    <br />
-                    <br />
-                    At Hard Stuff, we're passionate about “cardboard prototyping” to rapidly turn theory into reality.
-                </span>
-            ),
-        },
-        {
-            title: "Minimum Viable Product",
+            title: "Product",
             img: printed_prototype,
             content:
                 "Once a solution makes sense, both from an impactful and a financial sense, we build the truly Minimum Viable Product needed to prove to customers, investors, and stakeholders that this solution can change the World!",
@@ -71,14 +72,9 @@ export const OurApproach = (props) => {
                                 <img
                                     src={elem.img}
                                     alt={elem.title}
-                                    height="200px"
-                                    style={
-                                        {
-                                            // padding: "10%",
-                                        }
-                                    }
+                                    style={{maxHeight: "20vh"}}
                                 />
-                                <div style={{ color: idx === selected ? "" : "#fff0", fontSize: ".75em" }}>
+                                <div style={{ color: idx === selected ? "" : "#fff0", fontSize: "2.5vh" }}>
                                     {elem.content}
                                 </div>
                             </div>
