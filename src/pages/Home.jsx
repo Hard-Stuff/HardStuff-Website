@@ -7,17 +7,20 @@ import { EmailUsButton } from "../components/Buttons";
 import BuildTestXRepeat from "../components/BuildTestXRepeat";
 
 const Home = (props) => {
-    const {isMobile} = props;
+    const { isMobile } = props;
 
     return (
         <div className="App">
-            <header className="header">
+            <header style={{
+                alignItems: "center",
+                padding: "calc(25% - 140px) 0 25% 0"
+            }}>
                 <h1>
                     <span className="hardstuff">Hard Stuff </span>
                 </h1>
                 <BuildTestXRepeat />
             </header>
-            <section className="section">
+            <div className="section">
                 <div className="content">
                     <h2>
                         <span className="hardstuff">Hard Stuff</span> builds hardware to fix hard problems.
@@ -29,7 +32,7 @@ const Home = (props) => {
                         make a real difference.
                     </p>
                 </div>
-            </section>
+            </div>
             <OurApproach isMobile={isMobile} />
             <WhatIsHardStuffDoing isMobile={isMobile} />
             {/* <ContactUs isMobile={isMobile} /> */}

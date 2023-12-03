@@ -19,13 +19,16 @@ body {
     background-color: rgb(31, 31, 38);
     font-size: xx-large;
     color: rgb(235, 233, 242);
-    padding: 2em;
     margin: auto;
     text-align: center;
     align-items: center;
     align-content: center;
 }
 
+.flip-colours {
+    color: rgb(31, 31, 38);
+    background-color: rgb(235, 233, 242);
+}
 
 /* Hide the default scrollbar */
 ::-webkit-scrollbar {
@@ -61,19 +64,20 @@ a {
     font-family: "Rubik Glitch", sans-serif;
 }
 
-.hardstuffnocolor {
+.hardstuff-no-colour {
     font-weight: lighter;
     font-family: "Rubik Glitch", sans-serif;
 }
 
 .section {
-    margin: 10em 0 10em 0;
+    padding: 10vh 0 10vh 0;
     opacity: 0;
     animation-fill-mode: both;
     /* Make sure the element retains the state after the animation */
+    border: solid red 1px;
 }
 
-.section .content {
+.content {
     max-width: 70%;
     margin: 0 auto;
     margin-top: 3em;
@@ -83,19 +87,16 @@ a {
 h1 {
     font-size: 10rem;
     margin-bottom: 1rem;
-    color: rgb(255, 255, 255);
 }
 
 h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: rgb(255, 255, 255);
 }
 
 h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: rgb(255, 255, 255);
 }
 
 button {
@@ -112,18 +113,8 @@ button {
     font-family: inherit;
 }
 
-.hollowed {
-    background-color: initial;
-    border: 2px solid rgb(235, 233, 242);
-    color: rgb(235, 233, 242);
-}
-
 button:hover {
     background-color: rgb(224, 242, 133);
-}
-
-.hollowed:hover {
-    color: rgb(39, 48, 41);
 }
 
 .iconned_button {
@@ -156,10 +147,10 @@ button:hover {
 .scroll-container {
     display: flex;
     font-size: 1.5em;
-    overflow: hidden;
+    overflow-y: hidden;
     justify-content: center;
     /* Center align items horizontally */
-    margin: 20px;
+    /* margin: 100px; */
 }
 
 @keyframes fadeIn {
@@ -223,18 +214,6 @@ button:hover {
 
 /* Intersection Observer Animation */
 
-.fade-in {
-    opacity: 1;
-    animation: fadeInUp 1s forwards;
-}
-
-/* Transition Effects */
-
-.fade-in {
-    opacity: 1;
-    animation: fadeInUp 1s forwards;
-}
-
 /* Transition Effects */
 
 @keyframes fadeInUp {
@@ -258,16 +237,16 @@ button:hover {
 }
 
 .fade-in {
-    animation: fadeInUp 1s forwards;
+    animation: fadeInUp 3s forwards;
 }
 
 .fade-out {
-    animation: fadeOutDown 1s forwards;
+    animation: fadeOutDown 3s forwards;
 }
 
 .pillar-content {
     font-size: 1em;
-    animation: fadeInUp 1s forwards;
+    animation: fadeInUp 3s forwards;
     padding-top: 1em;
     padding-bottom: 2em;
 }
@@ -296,5 +275,13 @@ button:hover {
 
     .ignore_if_mobile {
         display: none;
+    }
+
+    .scroll-container {
+        display: inline;
+        font-size: 1.5em;
+        overflow-y: hidden;
+        justify-content: center;
+        /* Center align items horizontally */
     }
 }
