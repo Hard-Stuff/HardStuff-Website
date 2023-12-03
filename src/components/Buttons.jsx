@@ -60,11 +60,11 @@ export const EmailUsButton = (props) => {
     };
     return (
         <button
-            className="hollowed"
+            
             onClick={handleLetsChatClick}
             style={{ padding: ".5em", border: "none", ...props.style }}
         >
-            <span className="hardstuffnocolor">Email Us</span>
+            <span className="hardstuff-no-colour">Email Us</span>
         </button>
     );
 };

@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import "../App.css";
+import FlexBox from "../components/FlexBox";
 
 const AboutUs = () => {
     return (
         <>
             <section className="section">
                 <div className="content">
+                    <h2>Our Mission</h2>
                     <p>
-                        <span className="hardstuffnocolor">Our mission</span> is to empower hardware startups and
+                        <span className="hardstuff-no-colour">Our mission</span> is to empower hardware startups and
                         entrepreneurs, providing them with the proof, support, resources, and partnerships they need to
                         bring their groundbreaking ideas to life.
                         <br />
@@ -18,8 +20,9 @@ const AboutUs = () => {
             </section>
             <section className="section">
                 <div className="content">
+                    <h2>Our Vision</h2>
                     <p>
-                        <span className="hardstuffnocolor">We Envision a World</span> with a stable and safe climate,
+                        <span className="hardstuff-no-colour">We Envision a World</span> with a stable and safe climate,
                         without plastic in our oceans, with nature thriving, without hunger, and where everyone
                         everywhere is safe. <br />
                         <br />

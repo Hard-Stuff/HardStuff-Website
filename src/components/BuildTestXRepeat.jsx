@@ -48,7 +48,7 @@ const BuildTestXRepeat = () => {
 
 
     return (
-        <div className="scroll-container hardstuffnocolor">
+        <div className="scroll-container hardstuff-no-colour">
             <span style={{ margin: "0px 10px" }} className='build'>Build. </span>
             <span style={{ margin: "0px 10px" }} className='test'> Test. </span>
             <span style={{ margin: "0px 10px" }} className='scroll-item'>{options[currentIndex]}</span>
