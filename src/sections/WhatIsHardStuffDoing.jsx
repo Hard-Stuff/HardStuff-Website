@@ -14,13 +14,19 @@ export const WhatIsHardStuffDoing = (props) => {
             title: "Our work with hardware startups",
             content: (
                 <p className="pillar-content">
-                    <span className="hardstuff-no-colour">Hard Stuff Changemakers</span> is our powerhouse to support hardware startups, guiding you from your earliest idea to
+                    <span className="hardstuff-no-colour">Hard Stuff Changemakers</span> is our powerhouse
+                     to support hardware startups, guiding you from your earliest idea to
                     Minimum Viable Product.
                     <br />
                     <br />
                     We offer in-field testing support, rapid prototyping design and building,
                     engineering expertise, and scaling support; enabling startups to create tangible,
                     high-impact hardware solutions efficiently.
+                    <br />
+                    <br />
+                    <button>
+                        <a href="https://calendly.com/matt-hard-stuff/20min_hello">Book a call</a>
+                    </button>
                 </p>
             ),
         },
@@ -28,13 +34,19 @@ export const WhatIsHardStuffDoing = (props) => {
             title: "Our work with incubators and investors",
             content: (
                 <p className="pillar-content">
-                    We work closely with <span className="hardstuff-no-colour">Investors, Incubators, & Accelerators</span>, and with their startups,
+                    We work closely with <span className="hardstuff-no-colour">Investors, Incubators, & Accelerators</span>,
+                     and with their startups,
                     to support in-field testing to truly validate ideas.
                     And we teach founders how to deliver true, immediate impact; proving prototypes as impactful solutions.
                     <br />
                     <br />
                     This unlocks the next generation of hardware innovations that will solve massive global issues,
                     which in turn unlocks new funding and growth cycles that will fuel building the future.
+                    <br />
+                    <br />
+                    <button>
+                        <a href="https://calendly.com/matt-hard-stuff/20min_hello">Book a call</a>
+                    </button>
                 </p>
             ),
         },
@@ -48,8 +60,13 @@ export const WhatIsHardStuffDoing = (props) => {
                     We celebrate the amazing progress we've already made together (watch this space!).
                     <br />
                     <br />
-                    And we inspire the next generation of entrepreneurs to build a World that they're excited by through events, workshops, and public speaking.
-
+                    And through events, workshops, and public speaking we hope to inspire
+                     the next generation of entrepreneurs to build a World that they're excited by.
+                    <br />
+                    <br />
+                    <button>
+                        <a href="https://calendly.com/matt-hard-stuff/20min_hello">Book a call</a>
+                    </button>
                 </p>
             ),
         },

@@ -2,7 +2,8 @@ import {
     BrowserRouter as Router,
     Routes,
     Route,
-    useLocation
+    useLocation,
+    Navigate
 } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 
@@ -15,8 +16,8 @@ import Footer from "./components/Footer";
 
 const pages = [
     { endpoint: "/", title: "Home", component: <Home /> },
-    { endpoint: "/about-us", title: "About Us", component: <AboutUs /> },
-    { endpoint: "/contact-us", title: "Contact Us", component: <ContactUs /> },
+    { endpoint: "/about", title: "About", component: <AboutUs /> },
+    { endpoint: "/contact", title: "Contact", component: <ContactUs /> },
 ]
 
 const LoadPageContent = () => {
@@ -71,6 +72,7 @@ function App() {
                 {pages.map((each) => (
                     <Route path={each.endpoint} element={each.component} isMobile={isMobile} />
                 ))}
+                <Route path="*" element={<Navigate replace to="/" />} />
             </Routes>
             <Footer />
         </Router>

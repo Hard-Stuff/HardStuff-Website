@@ -14,9 +14,12 @@ function NavBar(props) {
         <nav>
             <div className="padded-header" />
             <header className="lock-header">
-                <img src={process.env.PUBLIC_URL + "/logo.svg"} alt="Let's build the Hard Stuff!" height="60px" style={{paddingLeft: "20px"}} />
-                {/* {!isMobile && <EmailUsButton style={{ position: "absolute", top: "5px", right: "50px" }} />} */}
-                <ul style={{ right: "0px" }} >
+                <a href="/">
+                    <img src={process.env.PUBLIC_URL + "/logo.svg"} alt="Let's build the Hard Stuff!" height="60px"
+                        title="Let's build the Hard Stuff!" style={{paddingLeft: "20px"}} />
+                </a>
+                    {/* {!isMobile && <EmailUsButton style={{ position: "absolute", top: "5px", right: "50px" }} />} */}
+                <ul style={{ right: "30px", paddingRight: "30px" }} >
                     {pages.map((each) => (
                         <Link to={each.endpoint} key={each.endpoint} className="header-link">
                             {each.title}

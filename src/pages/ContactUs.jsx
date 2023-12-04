@@ -12,45 +12,62 @@ const ContactUs = (props) => {
             title: "High Impact Startup",
             content: (
                 <p className="pillar-content">
-                    We work with high-impact hardware startups and young companies like yours to validate your impact
-                    propositions, through in-field testing and bootstrapped prototyping.
+                    We work with entrepreneurs, hardware startups and young companies to validate the problems
+                    they're solving and their solution, through in-field testing and bootstrapped prototyping.
                     <br />
                     <br />
-                    <button
-
-                        style={{
-                            fontSize: "0.75em",
-                            padding: ".35em",
-                        }}
-                    >
-                        <a href="https://airtable.com/appcWjsD8ARRM9939/shrPaJMAuX4C4WIXg">Get in touch</a>
+                    <button>
+                        <a href="https://calendly.com/matt-hard-stuff/20min_hello">Book a call</a>
                     </button>
-                    and let's see what change we can make together.
+                    <br />
+                    Let's see what we can build together.
                 </p>
             ),
         },
         {
-            title: "Investor or Incubator",
+            title: "Incubator",
             content: (
                 <p className="pillar-content">
-                    We want to work with you and your hardware startups to validate their value propositions through
+                    We want to work with you to show your entrepreneurs and startups that a hardware
+                    proof of concept prototype can be as quick and easy as software.
+                    <br />
+                    <br />
+                    <button
+
+                        // style={{
+                        //     fontSize: "0.75em",
+                        //     padding: ".35em",
+                        // }}
+                    >
+                        <a href="https://calendly.com/matt-hard-stuff/20min_hello">Book a call</a>
+                    </button>
+                    <br />
+                    Let's see what we can create together.
+                </p>
+            ),
+        },
+        {
+            title: "Investor",
+            content: (
+                <p className="pillar-content">
+                    We want to work with you and your hardware startups to validate the value propositions through
                     in-field testing, bootstrapped prototyping, and impact workshops.
                     <br />
                     <br />
                     <button
 
-                        style={{
-                            fontSize: "0.75em",
-                            padding: ".35em",
-                        }}
+                        // style={{
+                        //     fontSize: "0.75em",
+                        //     padding: ".35em",
+                        // }}
                     >
-                        <a href="https://airtable.com/appcWjsD8ARRM9939/shri6sPRw6w1H3dS2">Get in touch</a>
+                        <a href="https://calendly.com/matt-hard-stuff/20min_hello">Book a call</a>
                     </button>
-                    and let's see what we can create together.
+                    <br />
+                    Let's see what we can create together.
                 </p>
             ),
-        },
-        {
+        }/*        {
             title: "Fund of Funds",
             content: (
                 <p className="pillar-content">
@@ -70,16 +87,19 @@ const ContactUs = (props) => {
                     and let's make an amazing World together.
                 </p>
             ),
-        },
+        }, */
     ];
 
     return (
         <div className="section">
             <div className="content">
                 <span>
-                    The Time to Act is Now! We're partnering with the most ambitious sustainable hardware startups that will change the World!
+                    The Time to Act is Now!
                     <br />
-                    And we're partnering with their key stakeholders - such as suppliers and investors - to truly unlock a safe, clean, sustainable planet.
+                    <br />
+                    We work with ambitious hardware startups that are changing the World!
+                    <br />
+                    And we're partnering with their key stakeholders - such as suppliers and investors - to unlock a safe, clean, sustainable planet.
                 </span>
                 <h3 style={{ margin: "50px" }}>I am a...</h3>
                 <FlexBox defaultValue={0} elements={elements} />

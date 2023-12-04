@@ -18,13 +18,16 @@ export const OurApproach = () => {
                             img: cardboard_prototype,
                             content: (
                                 <span>
-                                    Early prototypes need to be simple, modifiable, and impactful<br /><em>(even if they fall apart!)</em>.
+                                    Early prototypes need to be simple, modifiable, and impactful<br />
+                                    <em>(even if they fall apart!)</em>.
                                     <br />
                                     <br />
-                                    At Hard Stuff, we build the prototypes you need to demonstrate viablity, engage with customers, and unlock investment.
+                                    At Hard Stuff, we build the prototypes you need to demonstrate viablity, engage with customers,
+                                     and unlock investment.
                                     <br />
                                     <br />
-                                    <em>An MVP is only <span className="hardstuff-no-colour">minimum</span> when you can't have possible made it cheaper and faster!</em>
+                                    <em>An MVP is only <span className="hardstuff-no-colour">minimum</span> when you can't
+                                     have possibly made it cheaper or faster!</em>
                                 </span>
                             ),
                         },
@@ -37,11 +40,12 @@ export const OurApproach = () => {
                                     Stuff we love getting our hands dirty.
                                     <br />
                                     <br />
-                                    We run in-field testing alongside startups, understanding the problems at the source and where the
-                                    impact needs to be made.
+                                    We run in-field testing with YOU to understand the problems at source and where the
+                                    solution is needed.
                                     <br />
                                     <br />
-                                    <em>An MVP is only <span className="hardstuff-no-colour">viable</span> when you've tested it on the field to prove that it solves the problem under the expected conditions!</em>
+                                    <em>An MVP is only <span className="hardstuff-no-colour">viable</span> when you've tested
+                                     it in the field to prove that it solves the problem in real-world conditions!</em>
                                 </span>
                             ),
                         },
@@ -51,13 +55,16 @@ export const OurApproach = () => {
                             content:
                                 (
                                     <span>
-                                        We work with startups to ensure that they can build their hardware at the scale and price-point that unlocks meaningful potential.
+                                        We work with startups to ensure that they can build their hardware at the scale and
+                                         price-point that unlocks meaningful potential.
                                         <br />
                                         <br />
-                                        On top of that, we help validate if your solution is productisable, so that you can go on to make continuous impact.
+                                        On top of that, we help validate if your solution is productisable, so that you
+                                         can go on to make continuous impact.
                                         <br />
                                         <br />
-                                        <em>An MVP is only a <span className="hardstuff-no-colour">product</span> when someone actually pays for it!</em>
+                                        <em>An MVP is only a <span className="hardstuff-no-colour">product</span> when someone
+                                         actually pays for it!</em>
                                     </span>
                                 ),
                         },

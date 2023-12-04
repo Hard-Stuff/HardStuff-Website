@@ -252,6 +252,17 @@ button:hover {
     /* padding-bottom: 1em; */
 }
 
+.pillar-content button {
+    font-size: 1em;
+    /* animation: fadeInUp 2s forwards; */
+    padding: 0.35em;
+    /* padding-bottom: 1em; */
+    border: solid 1px   ;
+    border-image: linear-gradient(135deg, rgb(20, 245, 174), rgb(165, 140, 254)) 30;
+    border-image-slice: 1;
+    border-radius: 0;
+}
+
 @media (max-width: 768px) {
     /* Mobile styles here */
 
