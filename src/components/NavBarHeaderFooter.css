@@ -1,0 +1,84 @@
+.lock-header {
+    font-size: 1em;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, rgb(20, 20, 20), rgba(165, 140, 254, 0));
+    z-index: 99;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    /* Positions the image and links on opposite ends */
+    align-items: center;
+    /* Aligns items vertically */
+    width: 100%;
+    /* Ensures the header takes full width */
+}
+
+.padded-header {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    height: 120px;
+    color: #fff0;
+}
+
+.header-link {
+    margin: 10px;
+    color: rgb(235, 233, 242);
+    text-decoration: none;
+}
+
+.header-link:hover {
+    color: rgb(224, 242, 133);
+}
+
+.lock-footer {
+    font-size: 1em;
+    padding: 20px;
+    position: fixed;
+    text-align: left;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 1em;
+    background: linear-gradient(0, rgb(20, 20, 20), rgba(165, 140, 254, 0));
+}
+
+.footer {
+    font-size: small;
+    margin: 20px;
+}
+
+.footer a {
+    color: rgb(224, 242, 133);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.footer-links {
+    position: absolute;
+    right: 0px;
+}
+
+@media (max-width: 768px) {
+
+    /* Mobile styles here */
+    .lock-header {
+        position: relative;
+    }
+
+    .padded-header {
+        height: 0px;
+    }
+
+    .lock-header ul {
+        padding-top: 30px;
+        font-size: .75em;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+
+}

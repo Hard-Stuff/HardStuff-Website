@@ -1,0 +1,27 @@
+.flex_box {
+    display: flex;
+    text-align: center;
+    font-size: 0.75em;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.flex_box img {
+    height: 30vh;
+}
+
+
+.flex_box_content {
+    margin: 5px;
+    padding: 1em 10px 1em 10px;
+    transition: flex 0.3s;
+    overflow: hidden;
+    border-radius: 5px;
+    /* background: #ffffff09; */
+}
+
+@media (max-width: 768px) {
+    .flex_box {
+        flex-direction: column;
+    }
+}
