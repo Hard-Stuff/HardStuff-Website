@@ -10,13 +10,13 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
-import HowWeWork from "./pages/HowWeWork";
 import Footer from "./components/Footer";
 
 
 const pages = [
     { endpoint: "/", title: "Home", component: <Home /> },
     { endpoint: "/about-us", title: "About Us", component: <AboutUs /> },
+    { endpoint: "/contact-us", title: "Contact Us", component: <ContactUs /> },
 ]
 
 const LoadPageContent = () => {

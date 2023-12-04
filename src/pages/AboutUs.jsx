@@ -31,6 +31,17 @@ const AboutUs = () => {
                     </p>
                 </div>
             </section>
+            <section className="section">
+                <div className="content">
+                    <h2>We work with...</h2>
+                    <p>
+                       We work with some of <span className="hardstuff-no-colour">the most impactful hardware startups in the World</span>.
+                       <br />
+                       <br />
+                        We're fascinated by the startups build
+                    </p>
+                </div>
+            </section>
         </>
     );
 };

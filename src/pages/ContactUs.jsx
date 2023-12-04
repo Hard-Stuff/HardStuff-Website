@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { EmailUsButton } from "../components/Buttons";
+import React, { } from "react";
+import { Widget } from '@typeform/embed-react'
+
+
 import FlexBox from "../components/FlexBox";
 
-export const ContactUs = (props) => {
+const ContactUs = (props) => {
     const { isMobile } = props;
 
     const elements = [
@@ -74,16 +76,17 @@ export const ContactUs = (props) => {
     return (
         <div className="section">
             <div className="content">
-                <h3>
-                    The Time to Act is Now!
-                    <br />I am a...
-                </h3>
-                <FlexBox isMobile={isMobile} elements={elements} />
-                <span style={{ display: "inline", fontSize: ".75em" }}>
-                    or you could always
-                    <EmailUsButton style={{ padding: "0px" }} />
+                <span>
+                    The Time to Act is Now! We're partnering with the most ambitious sustainable hardware startups that will change the World!
+                    <br />
+                    And we're partnering with their key stakeholders - such as suppliers and investors - to truly unlock a safe, clean, sustainable planet.
                 </span>
+                <h3 style={{ margin: "50px" }}>I am a...</h3>
+                <FlexBox defaultValue={0} elements={elements} />
+                <br />
             </div>
         </div>
     );
 };
+
+export default ContactUs;

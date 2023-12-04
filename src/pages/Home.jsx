@@ -13,7 +13,7 @@ const Home = (props) => {
         <div className="App">
             <header style={{
                 alignItems: "center",
-                padding: "calc(25% - 140px) 0 25% 0"
+                padding: "calc(25vh - 140px) 0 15% 0"
             }}>
                 <h1>
                     <span className="hardstuff">Hard Stuff </span>

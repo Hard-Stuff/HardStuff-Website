@@ -74,7 +74,7 @@ a {
     opacity: 0;
     animation-fill-mode: both;
     /* Make sure the element retains the state after the animation */
-    border: solid red 1px;
+    /* border: solid red 1px; */
 }
 
 .content {
@@ -145,10 +145,11 @@ button:hover {
 
 /* Auto-scroll effect */
 .scroll-container {
-    display: flex;
+    display: inline-flex;
     font-size: 1.5em;
     overflow-y: hidden;
     justify-content: center;
+    
     /* Center align items horizontally */
     /* margin: 100px; */
 }
@@ -246,9 +247,9 @@ button:hover {
 
 .pillar-content {
     font-size: 1em;
-    animation: fadeInUp 3s forwards;
-    padding-top: 1em;
-    padding-bottom: 2em;
+    animation: fadeInUp 2s forwards;
+    /* padding-top: 1em; */
+    /* padding-bottom: 1em; */
 }
 
 @media (max-width: 768px) {
