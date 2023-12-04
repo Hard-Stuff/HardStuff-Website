@@ -15,7 +15,7 @@ export const WhatIsHardStuffDoing = (props) => {
             content: (
                 <p className="pillar-content">
                     <span className="hardstuff-no-colour">Hard Stuff Changemakers</span> is our powerhouse
-                     to support hardware startups, guiding you from your earliest idea to
+                    to support hardware startups, guiding you from your earliest idea to
                     Minimum Viable Product.
                     <br />
                     <br />
@@ -35,7 +35,7 @@ export const WhatIsHardStuffDoing = (props) => {
             content: (
                 <p className="pillar-content">
                     We work closely with <span className="hardstuff-no-colour">Investors, Incubators, & Accelerators</span>,
-                     and with their startups,
+                    and with their startups,
                     to support in-field testing to truly validate ideas.
                     And we teach founders how to deliver true, immediate impact; proving prototypes as impactful solutions.
                     <br />
@@ -61,7 +61,7 @@ export const WhatIsHardStuffDoing = (props) => {
                     <br />
                     <br />
                     And through events, workshops, and public speaking we hope to inspire
-                     the next generation of entrepreneurs to build a World that they're excited by.
+                    the next generation of entrepreneurs to build a World that they're excited by.
                     <br />
                     <br />
                     <button>

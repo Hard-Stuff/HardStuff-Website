@@ -23,11 +23,11 @@ export const OurApproach = () => {
                                     <br />
                                     <br />
                                     At Hard Stuff, we build the prototypes you need to demonstrate viablity, engage with customers,
-                                     and unlock investment.
+                                    and unlock investment.
                                     <br />
                                     <br />
                                     <em>An MVP is only <span className="hardstuff-no-colour">minimum</span> when you can't
-                                     have possibly made it cheaper or faster!</em>
+                                        have possibly made it cheaper or faster!</em>
                                 </span>
                             ),
                         },
@@ -45,7 +45,7 @@ export const OurApproach = () => {
                                     <br />
                                     <br />
                                     <em>An MVP is only <span className="hardstuff-no-colour">viable</span> when you've tested
-                                     it in the field to prove that it solves the problem in real-world conditions!</em>
+                                        it in the field to prove that it solves the problem in real-world conditions!</em>
                                 </span>
                             ),
                         },
@@ -56,15 +56,15 @@ export const OurApproach = () => {
                                 (
                                     <span>
                                         We work with startups to ensure that they can build their hardware at the scale and
-                                         price-point that unlocks meaningful potential.
+                                        price-point that unlocks meaningful potential.
                                         <br />
                                         <br />
                                         On top of that, we help validate if your solution is productisable, so that you
-                                         can go on to make continuous impact.
+                                        can go on to make continuous impact.
                                         <br />
                                         <br />
                                         <em>An MVP is only a <span className="hardstuff-no-colour">product</span> when someone
-                                         actually pays for it!</em>
+                                            actually pays for it!</em>
                                     </span>
                                 ),
                         },

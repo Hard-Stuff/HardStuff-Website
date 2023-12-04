@@ -14,7 +14,7 @@ const options = [
     "Evolve.",
     "Revise.",
     "Overhaul.",
-    "WTF.",
+    "'WTF.'",
     "'Didn't expect that to happen!'",
     "Refine.",
     "'That worked!?'",

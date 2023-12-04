@@ -34,10 +34,10 @@ const ContactUs = (props) => {
                     <br />
                     <button
 
-                        // style={{
-                        //     fontSize: "0.75em",
-                        //     padding: ".35em",
-                        // }}
+                    // style={{
+                    //     fontSize: "0.75em",
+                    //     padding: ".35em",
+                    // }}
                     >
                         <a href="https://calendly.com/matt-hard-stuff/20min_hello">Book a call</a>
                     </button>
@@ -56,10 +56,10 @@ const ContactUs = (props) => {
                     <br />
                     <button
 
-                        // style={{
-                        //     fontSize: "0.75em",
-                        //     padding: ".35em",
-                        // }}
+                    // style={{
+                    //     fontSize: "0.75em",
+                    //     padding: ".35em",
+                    // }}
                     >
                         <a href="https://calendly.com/matt-hard-stuff/20min_hello">Book a call</a>
                     </button>

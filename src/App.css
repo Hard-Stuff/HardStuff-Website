@@ -149,7 +149,6 @@ button:hover {
     font-size: 1.5em;
     overflow-y: hidden;
     justify-content: center;
-    
     /* Center align items horizontally */
     /* margin: 100px; */
 }
@@ -257,10 +256,14 @@ button:hover {
     /* animation: fadeInUp 2s forwards; */
     padding: 0.35em;
     /* padding-bottom: 1em; */
-    border: solid 1px   ;
+    border: solid 1px;
     border-image: linear-gradient(135deg, rgb(20, 245, 174), rgb(165, 140, 254)) 30;
     border-image-slice: 1;
     border-radius: 0;
+}
+
+.mobile-only {
+    display: none;
 }
 
 @media (max-width: 768px) {
@@ -285,15 +288,20 @@ button:hover {
         padding: 6px;
     }
 
-    .ignore_if_mobile {
-        display: none;
-    }
-
     .scroll-container {
-        display: inline;
+        display: flex;
+        flex-direction: column;
         font-size: 1.5em;
         overflow-y: hidden;
         justify-content: center;
         /* Center align items horizontally */
     }
+
+
+    .mobile-only {
+        display: initial;
+    }
+    .ReactCollapse--collapse {
+        transition: height 1000ms;
+      }
 }

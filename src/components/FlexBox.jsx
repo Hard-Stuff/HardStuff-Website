@@ -20,11 +20,15 @@ const FlexBox = (props) => {
                     }}
                     onMouseEnter={() => setHighlighted(idx)}
                     onMouseLeave={() => setHighlighted(null)}
-                    onClick={() => idx === selected ? (defaultValue === null ? setSelected(null) : null) : setSelected(idx)}
+                    onClick={() => idx === selected ? setSelected(null) : setSelected(idx)}
                 >
                     <h3>{elem.title}</h3>
                     {elem.img ? <img src={elem.img} /> : ""}
-                    <UnmountClosed isOpened={idx === selected}>
+                    <span className="mobile-only" style={{ textDecoration: "underline" }}>
+                        <br />
+                        {idx === selected ? "▲" : "▽"}
+                    </span>
+                    <UnmountClosed isOpened={idx === selected} >
                         {elem.content}
                     </UnmountClosed>
                 </div>

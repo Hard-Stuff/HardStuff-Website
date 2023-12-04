@@ -73,4 +73,12 @@
         height: 0px;
     }
 
+    .lock-header ul {
+        padding-top: 30px;
+        font-size: .75em;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+
 }
