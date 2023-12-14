@@ -1,27 +1,31 @@
 .flex_box {
-    display: flex;
-    text-align: center;
-    font-size: 0.75em;
-    overflow: hidden;
-    cursor: pointer;
+	display: flex;
+	text-align: center;
+	font-size: 0.75em;
+	overflow: hidden;
+	cursor: pointer;
 }
 
 .flex_box img {
-    height: 30vh;
+	width: 15rem;
 }
 
-
 .flex_box_content {
-    margin: 5px;
-    padding: 1em 10px 1em 10px;
-    transition: flex 0.3s;
-    overflow: hidden;
-    border-radius: 5px;
-    /* background: #ffffff09; */
+	margin: 5px;
+	padding: 1em 10px 1em 10px;
+	transition: flex 0.3s;
+	overflow: hidden;
+	border-radius: 5px;
+	/* background: #ffffff09; */
 }
 
 @media (max-width: 768px) {
-    .flex_box {
-        flex-direction: column;
-    }
+	.flex_box {
+		flex-direction: column;
+	}
+	.flex_box_content {
+		margin: 1em;
+		border: #ffffff22 solid 1px;
+		box-shadow: 2px 2px 20px rgb(20, 245, 174, 0.05), -2px -2px 20px rgb(165, 140, 254, 0.05);
+	}
 }
