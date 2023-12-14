@@ -17,7 +17,7 @@ export const WhatIsHardStuffDoing = (props) => {
 					<br />
 					<br />
 					<button>
-						<a href="https://calendly.com/matt-hard-stuff/20min_hello">Book a call</a>
+						<a href="https://calendly.com/hello-hard-stuff/20-min-intro">Book a call</a>
 					</button>
 				</p>
 			),
@@ -37,7 +37,7 @@ export const WhatIsHardStuffDoing = (props) => {
 					<br />
 					<br />
 					<button>
-						<a href="https://calendly.com/matt-hard-stuff/20min_hello">Book a call</a>
+						<a href="https://calendly.com/hello-hard-stuff/20-min-intro">Book a call</a>
 					</button>
 				</p>
 			),
@@ -57,7 +57,7 @@ export const WhatIsHardStuffDoing = (props) => {
 					<br />
 					<br />
 					<button>
-						<a href="https://calendly.com/matt-hard-stuff/20min_hello">Book a call</a>
+						<a href="https://calendly.com/hello-hard-stuff/20-min-intro">Book a call</a>
 					</button>
 				</p>
 			),

@@ -55,7 +55,7 @@ export const IconnedButton = (props) => {
 export const EmailUsButton = (props) => {
 	const handleLetsChatClick = () => {
 		const subject = "I've just seen your website, and...";
-		const emailLink = `mailto:matt@hard-stuff.com?subject=${encodeURIComponent(subject)}`;
+		const emailLink = `mailto:hello@hard-stuff.com?subject=${encodeURIComponent(subject)}`;
 		window.open(emailLink, "_blank");
 	};
 	return (
