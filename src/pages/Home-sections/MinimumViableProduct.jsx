@@ -1,15 +1,15 @@
 // Import the images we'll use
-import cardboard_prototype from "../assets/images/cardboard_prototype.png";
-import in_field_testing from "../assets/images/in_field_testing.png";
-import printed_prototype from "../assets/images/printed_prototype.png";
-import FlexBox from "../components/FlexBox";
+import cardboard_prototype from "../../assets/images/cardboard_prototype.png";
+import in_field_testing from "../../assets/images/in_field_testing.png";
+import printed_prototype from "../../assets/images/printed_prototype.png";
+import FlexBox from "../../components/FlexBox";
 
-export const OurApproach = () => {
+export const MinimumViableProduct = () => {
 	return (
 		<>
 			<div className="section">
 				<div className="content">
-					<h2>Our approach</h2>
+					<h2>building the Minimum Viable Product</h2>
 					<FlexBox
 						elements={[
 							{
@@ -42,8 +42,8 @@ export const OurApproach = () => {
 										desk, so at Hard Stuff we love getting our hands dirty.
 										<br />
 										<br />
-										We run in-field testing with YOU to understand the problems at source and where
-										the solution is needed.
+										We run in-field testing with your team to understand the problems at source and where
+										the solution is needed most.
 										<br />
 										<br />
 										<em>

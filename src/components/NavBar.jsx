@@ -17,7 +17,6 @@ function NavBar(props) {
 						style={{ paddingLeft: "20px" }}
 					/>
 				</a>
-				{/* {!isMobile && <EmailUsButton style={{ position: "absolute", top: "5px", right: "50px" }} />} */}
 				<ul style={{ margin: "30px" }}>
 					{pages.map((each) => (
 						<Link to={each.endpoint} key={each.endpoint} className="header-link">

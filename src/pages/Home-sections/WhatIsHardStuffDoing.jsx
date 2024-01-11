@@ -1,4 +1,4 @@
-import FlexBox from "../components/FlexBox";
+import FlexBox from "../../components/FlexBox";
 
 // import local icons
 
@@ -8,8 +8,8 @@ export const WhatIsHardStuffDoing = (props) => {
 			title: "Our work with hardware startups",
 			content: (
 				<p className="pillar-content">
-					<span className="hardstuff-no-colour">Hard Stuff Changemakers</span> is our powerhouse to support
-					hardware startups, guiding you from your earliest idea to Minimum Viable Product.
+					<span className="hardstuff-no-colour">Hard Stuff</span> works directly with hardware startups,
+					guiding you from your earliest idea to Minimum Viable Product.
 					<br />
 					<br />
 					We offer in-field testing support, rapid prototyping design and building, engineering expertise, and

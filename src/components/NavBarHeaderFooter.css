@@ -58,20 +58,16 @@
 }
 
 .footer a {
-	color: rgb(224, 242, 133);
-	text-decoration: none;
-	margin-right: 1rem;
+	color: #fff;
+	/* margin-right: 1rem; */
+	/* text-decoration: none; */
+    font-family: inherit;
 }
 
 .footer-links {
-	position: fixed;
+	position: relative;
 	right: 0px;
 	bottom: 0px;
-	display: flex;
-	flex-direction: column;
-}
-.footer-links > * {
-	padding-bottom: 10px;
 }
 .footer-link-img {
 	height: 48px;

@@ -9,14 +9,6 @@ const Footer = () => {
 			<footer className="lock-footer" />
 			<footer className="footer">
 				<div className="content">
-					<div className="footer-links">
-						<a href="https://www.linkedin.com/company/hard-stuff">
-							<img src={linkedin_icon} className="footer-link-img" alt="linkedin icon" />
-						</a>
-						<a href="mailto:hello@hard-stuff.com">
-							<img src={email_icon} className="footer-link-img" alt="email icon" />
-						</a>
-					</div>
 					<p>
 						&copy; {new Date().getFullYear()} <span className="hardstuff">Hard Stuff</span>. All rights
 						reserved.
@@ -24,6 +16,13 @@ const Footer = () => {
 						<br />
 						Hard Stuff is the trading name of <em>Hardware is Easy Ltd. #15281302</em>
 					</p>
+					<br />
+					<div className="footer-links">
+						Find us on <a href="https://www.linkedin.com/company/hard-stuff"> LinkedIn </a>
+						{/* <img src={linkedin_icon} className="footer-link-img" alt="linkedin icon" /> */}
+						or email us at <a href="mailto:hello@hard-stuff.com">hello@hard-stuff.com</a>
+						{/* <img src={email_icon} className="footer-link-img" alt="email icon" /> */}
+					</div>
 				</div>
 			</footer>
 		</>

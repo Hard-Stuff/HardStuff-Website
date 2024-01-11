@@ -58,14 +58,13 @@ function App() {
 		window.scrollTo(0, 0);
 	});
 
-	const isMobile = width <= 768;
 	return (
 		<Router>
 			<NavBar pages={pages} />
 			<LoadPageContent />
 			<Routes>
 				{pages.map((each) => (
-					<Route path={each.endpoint} element={each.component} isMobile={isMobile} />
+					<Route path={each.endpoint} element={each.component}/>
 				))}
 				<Route path="*" element={<Navigate replace to="/" />} />
 			</Routes>
