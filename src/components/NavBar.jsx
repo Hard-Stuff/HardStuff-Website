@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./NavBarHeaderFooter.css";
 
 function NavBar(props) {
 	const { pages } = props;
+	const location = useLocation(); // Using useLocation hook
 
 	return (
 		<nav>
@@ -17,9 +18,17 @@ function NavBar(props) {
 						style={{ paddingLeft: "20px" }}
 					/>
 				</a>
-				<ul style={{ margin: "30px" }}>
+				<ul style={{ margin: "20px" }}>
 					{pages.map((each) => (
-						<Link to={each.endpoint} key={each.endpoint} className="header-link">
+						<Link
+							to={each.endpoint}
+							key={each.endpoint}
+							className="header-link"
+							style={{
+								borderTop: location.pathname === each.endpoint ? "white solid 1px" : "",
+								borderBottom: location.pathname === each.endpoint ? "white solid 1px" : "",
+							}}
+						>
 							{each.title}
 						</Link>
 					))}

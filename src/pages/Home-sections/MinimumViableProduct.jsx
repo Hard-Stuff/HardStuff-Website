@@ -7,7 +7,7 @@ import FlexBox from "../../components/FlexBox";
 export const MinimumViableProduct = () => {
 	return (
 		<>
-			<div className="section">
+			<section>
 				<div className="content">
 					<h2>building the Minimum Viable Product</h2>
 					<FlexBox
@@ -77,7 +77,7 @@ export const MinimumViableProduct = () => {
 						]}
 					/>
 				</div>
-			</div>
+			</section>
 		</>
 	);
 };

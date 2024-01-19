@@ -68,8 +68,9 @@ a {
 	font-family: "Rubik Glitch", sans-serif;
 }
 
-.section {
-	padding: 10vh 0 10vh 0;
+section {
+	padding: 2vh 0 2vh 0;
+	margin: 15vh 0 15vh 0;
 	opacity: 0;
 	animation-fill-mode: both;
     min-height: 60vh;
@@ -114,7 +115,7 @@ button {
 }
 
 button:hover {
-	background-color: rgb(224, 242, 133);
+	background: linear-gradient(135deg, rgb(228, 124, 69), rgb(238, 77, 69));
 }
 
 .iconned_button {
@@ -134,7 +135,7 @@ button:hover {
 }
 
 .iconned_button:hover {
-	background-color: rgb(224, 242, 133);
+	background: linear-gradient(135deg, rgb(228, 124, 69), rgb(238, 77, 69));
 	border-color: rgb(224, 242, 133);
 }
 

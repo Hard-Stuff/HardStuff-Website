@@ -6,17 +6,19 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import Footer from "./components/Footer";
+import Collaborations from "./pages/Collaborations";
 
 const pages = [
 	{ endpoint: "/", title: "Home", component: <Home /> },
 	{ endpoint: "/about", title: "About", component: <AboutUs /> },
 	{ endpoint: "/contact", title: "Contact", component: <ContactUs /> },
+	{ endpoint: "/collaborations", title: "Collaborations", component: <Collaborations /> },
 ];
 
 const LoadPageContent = () => {
 	const location = useLocation(); // Using useLocation hook
 	useEffect(() => {
-		const sections = document.querySelectorAll(".section");
+		const sections = document.querySelectorAll("section");
 
 		const fadeInOptions = {
 			threshold: 0.2,
@@ -42,6 +44,7 @@ const LoadPageContent = () => {
 };
 
 function App() {
+    // eslint-disable-next-line
 	const [width, setWidth] = useState(window.innerWidth);
 
 	function handleWindowSizeChange() {

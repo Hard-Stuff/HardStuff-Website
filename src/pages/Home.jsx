@@ -8,13 +8,13 @@ import { MakeTestTeach } from "./Home-sections/MakeTestTeach";
 const Home = (props) => {
 	return (
 		<div className="App">
-			<div className="section">
+			<section>
 				<h1>
 					<span className="hardstuff">Hard Stuff </span>
 				</h1>
 				<BuildTestXRepeat />
-			</div>
-			<div className="section">
+			</section>
+			<section>
 				<div className="content">
 					<h2>
 						<span className="hardstuff">Hard Stuff</span> works with hardware startups fixing hard problems.
@@ -26,7 +26,7 @@ const Home = (props) => {
 						hardware startups that aim to address these high-impact areas.
 					</p>
 				</div>
-			</div>
+			</section>
 			<MakeTestTeach />
 			<MinimumViableProduct />
 			<WhatIsHardStuffDoing />
