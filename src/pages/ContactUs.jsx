@@ -93,7 +93,7 @@ const ContactUs = (props) => {
 					<div className="pillar-content">
 						Or you can
 						<a href="mailto:hello@hard-stuff.com">
-							<button style={{ fontWeight: "light" }}>send us an email</button>
+							<button style={{ fontWeight: 400 }}>send us an email</button>
 						</a>
 					</div>
 				</div>
