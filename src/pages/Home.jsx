@@ -9,7 +9,7 @@ const Home = (props) => {
 	return (
 		<div className="App">
 			<section>
-				<h1 style={{fontSize: "10rem"}}>
+				<h1 className="big-h1">
 					<span className="hardstuff">Hard Stuff </span>
 				</h1>
 				<BuildTestXRepeat />
