@@ -24,7 +24,7 @@ const FlexBox = (props) => {
 							backgroundImage: imgIsBackground ? `url(${elem.img})` : "",
 							backgroundSize: "cover",
 							backgroundPosition:
-								"top " + (idx == 0 ? "left" : idx == elements.length - 1 ? "right" : "center"),
+								"top " + (idx === 0 ? "left" : idx === elements.length - 1 ? "right" : "center"),
 							border: imgIsBackground ? ("solid 2px " + (idx === highlighted ?  "#fff5" : "rgb(31, 31, 38)")) : "",
 						}}
 						onMouseEnter={() => setHighlighted(idx)}

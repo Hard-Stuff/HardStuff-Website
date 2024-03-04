@@ -1,7 +1,7 @@
 import "./NavBarHeaderFooter.css";
 
-import linkedin_icon from "../assets/icons/linkedin.png";
-import email_icon from "../assets/icons/email.png";
+// import linkedin_icon from "../assets/icons/linkedin.png";
+// import email_icon from "../assets/icons/email.png";
 
 const Footer = () => {
 	return (

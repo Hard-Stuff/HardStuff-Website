@@ -75,30 +75,30 @@ const ContactUs = (props) => {
 	];
 
 	return (
-		<div className="section">
-			<div className="content">
-				<span>
-					The Time to Act is Now!
-					<br />
-					<br />
-					We work with ambitious hardware startups that are changing the World!
-					<br />
-					And we're partnering with their key stakeholders - such as suppliers and investors - to unlock a
-					safe, clean, sustainable planet.
-				</span>
-				<h3 style={{ margin: "50px" }}>I am a...</h3>
-				<FlexBox defaultValue={0} elements={elements} />
-				<br />
-				<div className="pillar-content">
-					Or you can
-					<button>
-						<a href="mailto:hello@hard-stuff.com" style={{ fontSize: "0.8em" }}>
-							send us an email
-						</a>
-					</button>
+		<>
+			<section>
+				<div className="content">
+					<h1 className="hardstuff-no-colour">Contact us</h1>
+					<span>
+						We work with ambitious hardware startups that are changing the World!
+						<br />
+						And we're partnering with their key stakeholders - such as suppliers and investors - to unlock a
+						safe, clean, sustainable planet.
+					</span>
 				</div>
-			</div>
-		</div>
+				<div className="content">
+					<h3 style={{ margin: "50px" }}>I am a...</h3>
+					<FlexBox defaultValue={0} elements={elements} />
+					<br />
+					<div className="pillar-content">
+						Or you can
+						<a href="mailto:hello@hard-stuff.com">
+							<button style={{ fontWeight: 400 }}>send us an email</button>
+						</a>
+					</div>
+				</div>
+			</section>
+		</>
 	);
 };
 

@@ -67,12 +67,12 @@ export const MakeTestTeach = (props) => {
 
 	return (
 		<>
-			<div className="section">
+			<section>
 				<div className="content">
 					<FlexBox defaultValue={0} elements={elements} imgIsBackground={true} />
 					<br />
 				</div>
-			</div>
+			</section>
 		</>
 	);
 };

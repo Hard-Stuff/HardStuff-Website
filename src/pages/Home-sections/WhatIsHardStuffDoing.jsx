@@ -43,7 +43,7 @@ export const WhatIsHardStuffDoing = (props) => {
 			),
 		},
 		{
-			title: "Our championing of amazing hardware",
+			title: "Our championing of impactful hardware",
 			content: (
 				<p className="pillar-content">
 					We make high-impact hardware companies great.
@@ -66,7 +66,7 @@ export const WhatIsHardStuffDoing = (props) => {
 
 	return (
 		<>
-			<div className="section">
+			<section>
 				<div className="content">
 					<h2 style={{ margin: "50px" }}>
 						How does <span className="hardstuff">Hard Stuff</span> fit in with your World?
@@ -74,7 +74,7 @@ export const WhatIsHardStuffDoing = (props) => {
 					<FlexBox defaultValue={0} elements={elements} />
 					<br />
 				</div>
-			</div>
+			</section>
 		</>
 	);
 };

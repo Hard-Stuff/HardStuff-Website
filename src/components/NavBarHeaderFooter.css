@@ -34,7 +34,10 @@
 }
 
 .header-link:hover {
-	color: rgb(224, 242, 133);
+	background: linear-gradient(135deg, rgb(228, 124, 69), rgb(238, 77, 69));
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
 }
 
 .lock-footer {
@@ -77,6 +80,8 @@
 	/* Mobile styles here */
 	.lock-header {
 		position: relative;
+        height: auto;
+        display: inline-flex;
 	}
 
 	.padded-header {
@@ -84,7 +89,6 @@
 	}
 
 	.lock-header ul {
-		padding-top: 30px;
 		font-size: 0.75em;
 		display: flex;
 		flex-direction: column;
