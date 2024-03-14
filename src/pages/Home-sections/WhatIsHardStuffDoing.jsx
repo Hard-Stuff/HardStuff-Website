@@ -16,9 +16,9 @@ export const WhatIsHardStuffDoing = (props) => {
 					scaling support; enabling startups to create tangible, high-impact hardware solutions efficiently.
 					<br />
 					<br />
-					<button>
-						<a href="https://calendly.com/hello-hard-stuff/20-min-intro">Book a call</a>
-					</button>
+					<a href="https://calendly.com/hello-hard-stuff/20-min-intro">
+						<button>Book a call</button>
+					</a>
 				</p>
 			),
 		},
@@ -36,9 +36,9 @@ export const WhatIsHardStuffDoing = (props) => {
 					which in turn unlocks new funding and growth cycles that will fuel building the future.
 					<br />
 					<br />
-					<button>
-						<a href="https://calendly.com/hello-hard-stuff/20-min-intro">Book a call</a>
-					</button>
+					<a href="https://calendly.com/hello-hard-stuff/20-min-intro">
+						<button>Book a call</button>
+					</a>
 				</p>
 			),
 		},
@@ -56,9 +56,9 @@ export const WhatIsHardStuffDoing = (props) => {
 					entrepreneurs to build a World that they're excited by.
 					<br />
 					<br />
-					<button>
-						<a href="https://calendly.com/hello-hard-stuff/20-min-intro">Book a call</a>
-					</button>
+					<a href="https://calendly.com/hello-hard-stuff/20-min-intro">
+						<button>Book a call</button>
+					</a>
 				</p>
 			),
 		},

@@ -66,8 +66,8 @@ function App() {
 			<NavBar pages={pages} />
 			<LoadPageContent />
 			<Routes>
-				{pages.map((each) => (
-					<Route path={each.endpoint} element={each.component}/>
+				{pages.map((each, idx) => (
+					<Route path={each.endpoint} element={each.component} key={idx}/>
 				))}
 				<Route path="*" element={<Navigate replace to="/" />} />
 			</Routes>
