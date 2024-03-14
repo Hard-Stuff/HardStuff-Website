@@ -25,7 +25,7 @@ const Home = (props) => {
 				<div className="content">
 					<p>
 						Hard Stuff is the prototyping and testing partner for sustainability and impact-focussed
-						hardware startups in the UK. We build, test, and teach, all to see the world's toughest
+						hardware startups based in the UK. We build, test, and teach, all to see the world's toughest
 						challenges solved through hardware innovations.
 					</p>
 				</div>
@@ -35,10 +35,12 @@ const Home = (props) => {
 						<br />
 						And yet there is a serious lack of support available for hardware startups that aim to address
 						these high-impact areas.
+						<br />
+						We're here to change that.
 					</p>
 				</div>
 			</section>
-			<section>
+			<section style={{ minHeight: "inherit" }}>
 				<ItsTimeToBuild />
 			</section>
 			<MakeTestTeach />

@@ -20,7 +20,8 @@ const Footer = () => {
 						reserved.
 						<br />
 						<br />
-						Hard Stuff is the trading name of <em>Hardware is Easy Ltd. #15281302</em>
+						Hard Stuff is the trading name of <em>Hardware is Easy Ltd. #15281302</em><br />
+                        Based in London, UK.
 					</p>
 					<br />
 				</div>

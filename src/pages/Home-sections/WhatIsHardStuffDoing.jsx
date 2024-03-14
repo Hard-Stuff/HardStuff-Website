@@ -49,11 +49,8 @@ export const WhatIsHardStuffDoing = (props) => {
 					We make high-impact hardware companies great.
 					<br />
 					<br />
-					We celebrate the amazing progress we've already made together (watch this space!).
-					<br />
-					<br />
-					And through events, workshops, and public speaking we hope to inspire the next generation of
-					entrepreneurs to build a World that they're excited by.
+					And through our events, workshops, and public speaking in London and across the UK we hope to
+					inspire the next generation of entrepreneurs to build a World that they're excited by.
 					<br />
 					<br />
 					<a href="https://calendly.com/hello-hard-stuff/20-min-intro">
