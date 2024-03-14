@@ -16,13 +16,13 @@ export const MakeTestTeach = (props) => {
 			img: cups_prototype,
 			content: (
 				<p className="pillar-content">
-					Struggling to build the core minimum of your solution that demonstrates to customers, investors, and
-					stakeholders what your vision can really be?
+					You need your core minimum viable product to demonstrate to customers, investors, and stakeholders
+					what your vision can really be!
 					<br />
 					<br />
-					We offer hyper rapid prototyping services to hardware startups to build your Minimum Viable Products
-					and technology demonstrators. By building iteratively, sticking to the core minimum, and moving
-					fast: we'll unlock the next technical phase of your venture.
+					We offer hyper rapid prototype development services across mechanical, electrical, environmental,
+					and sustainable engineering. We build iteratively, stick to the core features, and move fast, all to
+					unlock the next technical phase of your venture.
 				</p>
 			),
 		},
@@ -52,14 +52,15 @@ export const MakeTestTeach = (props) => {
 			img: polyt_lecture,
 			content: (
 				<p className="pillar-content">
-					Are you early in your startup journey and not sure on the technical and impact directions to take?
+					Are you early in your startup journey and not sure on the technologies and impact directions to
+					take?
 					<br />
 					<br />
-					We work directly with startups and with incubators & accelerators to inspire hardware startups to
-					achieve their maximum impact potential. <br />
-					We do this through workshops on understanding the Minimum Viable Product, cardboard prototyping,
-					and why now - in the midst of a "software age" yet myriad of climate and societal challenges - is
-					the time to make hard stuff!
+					We turn engineers into CTOs, working directly with startups and with incubators & accelerators to
+					inspire hardware startups to achieve their maximum impact potential. <br />
+					We do this through workshops on understanding the Minimum Viable Product, cardboard prototyping, and
+					why now - in the midst of a "software age" yet myriad of climate and societal challenges - is the
+					time to make hard stuff!
 				</p>
 			),
 		},

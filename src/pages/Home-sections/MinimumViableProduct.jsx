@@ -9,7 +9,7 @@ export const MinimumViableProduct = () => {
 		<>
 			<section>
 				<div className="content">
-					<h2>building the Minimum Viable Product</h2>
+					<h2>we build your Minimum Viable Product (MVP)</h2>
 					<FlexBox
 						elements={[
 							{

@@ -22,10 +22,28 @@ const Collaborations = (props) => {
 					their Cohort 2.
 					<br />
 					<br />
-					<a href="https://ia.asquared.uk/" style={{fontFamily: "inherit"}}><button >Find out more about the Impact Accelerator here.</button></a>
+					<a href="https://ia.asquared.uk/" style={{ fontFamily: "inherit" }}>
+						<button>Find out more about the Impact Accelerator</button>
+					</a>
 				</p>
 			),
 			logo: "https://assets-global.website-files.com/653259e749830c70453b3221/65538b711d8c2c8b076473a6_Master%20IA%20logo%20purp%20blue-close-p-500.png",
+		},
+		{
+			title: "hardware.london",
+			content: (
+				<p className="pillar-content">
+					Hardware.London is a community of hardware innovators, small businesses, and advocaters for making
+					things that solve real problems. We're based in London where we run events, and team up with
+					sponsors and speakers to shake up and champion the industry!
+					<br />
+					<br />
+					Let's build!
+					<a href="https://hardware.london/" style={{ fontFamily: "inherit" }}>
+						<button>Find out more about hardware.london</button>
+					</a>
+				</p>
+			),
 		},
 	];
 
@@ -43,13 +61,13 @@ const Collaborations = (props) => {
 				<section className={`${idx % 2 ? "" : "flip-colours"}`}>
 					{/* <h3 style={{ margin: "50px" }}>Learn more about our collaborators here</h3> */}
 					<div key={idx} className="content">
-						<span
-							style={{
-								display: "inline-flex",
-							}}
-						>
-							{elem.logo ? <img src={elem.logo} style={{ height: "1.5em" }} alt={`logo of ${elem.title}`}/> : ""}
-							<h2 style={{ margin: "0em 1em" }}>{elem.title}</h2>
+						<span>
+							{elem.logo ? (
+								<img src={elem.logo} style={{ height: "1.5em" }} alt={`logo of ${elem.title}`} />
+							) : (
+								""
+							)}
+							<h2>{elem.title}</h2>
 						</span>
 						{elem.content}
 					</div>

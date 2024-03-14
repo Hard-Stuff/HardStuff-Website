@@ -12,9 +12,9 @@ const ContactUs = (props) => {
 					solving and their solution, through in-field testing and bootstrapped prototyping.
 					<br />
 					<br />
-					<button>
-						<a href="https://calendly.com/hello-hard-stuff/20-min-intro">Book a call</a>
-					</button>
+					<a href="https://calendly.com/hello-hard-stuff/20-min-intro">
+						<button>Book a call</button>
+					</a>
 					<br />
 					Let's see what we can build together.
 				</p>
@@ -28,9 +28,9 @@ const ContactUs = (props) => {
 					prototype can be as quick and easy as software.
 					<br />
 					<br />
-					<button>
-						<a href="https://calendly.com/hello-hard-stuff/20-min-intro">Book a call</a>
-					</button>
+					<a href="https://calendly.com/hello-hard-stuff/20-min-intro">
+						<button>Book a call</button>
+					</a>
 					<br />
 					Let's see what we can create together.
 				</p>
@@ -44,9 +44,9 @@ const ContactUs = (props) => {
 					in-field testing, bootstrapped prototyping, and impact workshops.
 					<br />
 					<br />
-					<button>
-						<a href="https://calendly.com/hello-hard-stuff/20-min-intro">Book a call</a>
-					</button>
+					<a href="https://calendly.com/hello-hard-stuff/20-min-intro">
+						<button>Book a call</button>
+					</a>
 					<br />
 					Let's see what we can create together.
 				</p>
